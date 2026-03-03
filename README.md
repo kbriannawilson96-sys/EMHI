@@ -20,26 +20,6 @@
   * { margin:0; padding:0; box-sizing:border-box; }
   body { font-family:'DM Sans',sans-serif; background:var(--offwhite); color:var(--text); width:900px; margin:0 auto; padding-top:52px; }
 
-  /* EDIT BAR */
-  .edit-bar {
-    position:fixed; top:0; left:0; right:0; z-index:9999;
-    background:#0F2240; border-bottom:2px solid #24AABF;
-    padding:10px 24px; display:flex; align-items:center; gap:16px;
-    font-family:'DM Sans',sans-serif; box-shadow:0 2px 12px rgba(0,0,0,0.3);
-  }
-  .edit-bar-label { font-size:12px; font-weight:600; letter-spacing:1.5px; text-transform:uppercase; color:#6DCFDB; }
-  .edit-bar-hint  { font-size:12px; color:rgba(255,255,255,0.5); flex:1; }
-  .edit-btn { padding:6px 18px; border-radius:6px; border:none; font-family:'DM Sans',sans-serif; font-size:12px; font-weight:600; cursor:pointer; transition:all 0.15s; }
-  .edit-btn-ghost { background:transparent; border:1px solid rgba(36,170,191,0.5); color:#6DCFDB; }
-  .edit-btn-ghost:hover { background:rgba(36,170,191,0.15); }
-  .edit-btn-save  { background:#1A8A9B; color:white; }
-  .edit-btn-save:hover { background:#24AABF; }
-  .edit-saved-msg { font-size:11px; color:#6DCFDB; opacity:0; transition:opacity 0.3s; }
-
-  /* CONTENTEDITABLE */
-  [contenteditable] { outline:none; border-radius:3px; transition:background 0.15s, box-shadow 0.15s; cursor:text; }
-  [contenteditable]:hover { background:rgba(26,138,155,0.1); box-shadow:0 0 0 2px rgba(26,138,155,0.25); }
-  [contenteditable]:focus { background:rgba(26,138,155,0.15); box-shadow:0 0 0 2px rgba(26,138,155,0.5); }
 
   /* HEADER */
   .header { background:var(--navy); padding:52px 56px 44px; position:relative; overflow:hidden; }
@@ -248,21 +228,12 @@
 </head>
 <body>
 
-<!-- EDIT BAR -->
-<div class="edit-bar">
-  <span class="edit-bar-label">✎ Edit Mode</span>
-  <span class="edit-bar-hint">Click any text on the page to edit it. Changes are saved automatically.</span>
-  <span class="edit-saved-msg" id="saved-msg">✓ Saved</span>
-  <button class="edit-btn edit-btn-ghost" id="reset-btn">Reset</button>
-  <button class="edit-btn edit-btn-ghost" id="print-btn">🖶 Print / PDF</button>
-  <button class="edit-btn edit-btn-save" id="save-btn">Save Changes</button>
-</div>
 
 <!-- HEADER -->
 <div class="header">
   <div class="header-tag">U of T EMHI • 2026</div>
-  <h1 contenteditable="true" spellcheck="true">Bridging <span>the Gap</span></h1>
-  <p class="header-sub" contenteditable="true" spellcheck="true">Paramedics, Health Informatics &amp; the Imperative for Continuity of Care — a bidirectional, patient-following data framework</p>
+  <h1 spellcheck="true">Bridging <span>the Gap</span></h1>
+  <p class="header-sub" spellcheck="true">Paramedics, Health Informatics &amp; the Imperative for Continuity of Care — a bidirectional, patient-following data framework</p>
   <div class="header-pills">
     <span class="pill">Prehospital Care</span>
     <span class="pill">Health Data Interoperability</span>
@@ -277,13 +248,13 @@
 <!-- 01 THE PROBLEM -->
 <div class="section-label">
   <div class="section-num">01</div>
-  <div class="section-title" contenteditable="true" spellcheck="true">The Problem: Paramedics Excluded from the Data Ecosystem</div>
+  <div class="section-title" spellcheck="true">The Problem: Paramedics Excluded from the Data Ecosystem</div>
 </div>
 <div class="problem-grid">
-  <div class="problem-card"><p contenteditable="true" spellcheck="true">Paramedics are the <strong>first clinical contact</strong> in most emergency episodes — yet they arrive on scene with <span class="hl">no access to medical history, medications, allergies, or prior 911 interactions.</span>&nbsp;</p></div>
-  <div class="problem-card"><p contenteditable="true" spellcheck="true">Patients are forced to <strong>retell their story</strong> at every step: dispatch → paramedic → triage → nurse →&nbsp;physician → specialist.&nbsp;</p></div>
-  <div class="problem-card"><p contenteditable="true" spellcheck="true">Health data today is <span class="hl">custodian-centric, not patient-centric.</span> Each organization holds its own version of the patient record.</p></div>
-  <div class="problem-card"><p contenteditable="true" spellcheck="true">The 911 system is <strong>burdened by non-emergent calls</strong> because patients lack primary care access. Without richer information, paramedics have only one option: transport to an ED.</p></div>
+  <div class="problem-card"><p spellcheck="true">Paramedics are the <strong>first clinical contact</strong> in most emergency episodes — yet they arrive on scene with <span class="hl">no access to medical history, medications, allergies, or prior 911 interactions.</span>&nbsp;</p></div>
+  <div class="problem-card"><p spellcheck="true">Patients are forced to <strong>retell their story</strong> at every step: dispatch → paramedic → triage → nurse →&nbsp;physician → specialist.&nbsp;</p></div>
+  <div class="problem-card"><p spellcheck="true">Health data today is <span class="hl">custodian-centric, not patient-centric.</span> Each organization holds its own version of the patient record.</p></div>
+  <div class="problem-card"><p spellcheck="true">The 911 system is <strong>burdened by non-emergent calls</strong> because patients lack primary care access. Without richer information, paramedics have only one option: transport to an ED.</p></div>
 </div>
 
 <div class="dual-harm">
@@ -294,8 +265,8 @@
         <path d="M7 11V7a5 5 0 0 1 9.9-1"></path>
       </svg>
     </div>
-    <h3 contenteditable="true" spellcheck="true">Harm #1 — Breach</h3>
-    <p contenteditable="true" spellcheck="true">Exposing patient data violates privacy and erodes trust in the healthcare system</p>
+    <h3 spellcheck="true">Harm #1 — Breach</h3>
+    <p spellcheck="true">Exposing patient data violates privacy and erodes trust in the healthcare system</p>
   </div>
   <div class="harm-vs">vs</div>
   <div class="harm-box withhold">
@@ -306,10 +277,10 @@
         <line x1="1" y1="1" x2="23" y2="23"></line>
       </svg>
     </div>
-    <h3 contenteditable="true" spellcheck="true">Harm #2 — Withhold</h3>
-    <p contenteditable="true" spellcheck="true">Withholding patient data forces providers to make decisions without the information they need</p>
+    <h3 spellcheck="true">Harm #2 — Withhold</h3>
+    <p spellcheck="true">Withholding patient data forces providers to make decisions without the information they need</p>
   </div>
-  <p class="dual-harm-label" contenteditable="true" spellcheck="true">Both are serious. The system concentrates on the first while largely tolerating the second. — CPSA, Interoperability Saves Lives (2023)</p>
+  <p class="dual-harm-label" spellcheck="true">Both are serious. The system concentrates on the first while largely tolerating the second. — CPSA, Interoperability Saves Lives (2023)</p>
 </div>
 
 <!-- EXPANSION PANEL -->
@@ -322,26 +293,26 @@
     <span class="expansion-chevron">⌄</span>
   </div>
   <div class="expansion-body">
-    <p class="exp-intro" contenteditable="true" spellcheck="true">Data gives paramedics the tools to change the healthcare system in three concrete directions.</p>
+    <p class="exp-intro" spellcheck="true">Data gives paramedics the tools to change the healthcare system in three concrete directions.</p>
     <div class="exp-grid">
       <div class="exp-card">
         <div class="exp-card-num">01</div>
-        <h4 contenteditable="true" spellcheck="true">Smart Destination Routing</h4>
-        <p contenteditable="true" spellcheck="true">A paramedic who can access data turns a default transport into an informed clinical decision.<div><br></div><div>- geriatric patients</div><div>- cardiac patients</div><div>- mental health patients</div><div>- dialysis patients</div></p>
+        <h4 spellcheck="true">Smart Destination Routing</h4>
+        <p spellcheck="true">A paramedic who can access data turns a default transport into an informed clinical decision.<div><br></div><div>- geriatric patients</div><div>- cardiac patients</div><div>- mental health patients</div><div>- dialysis patients</div></p>
       </div>
       <div class="exp-card">
         <div class="exp-card-num">02</div>
-        <h4 contenteditable="true" spellcheck="true">Care Coaching &amp; Pathway Redirection</h4>
-        <p contenteditable="true" spellcheck="true">For low-acuity calls, a paramedic with access to a patient’s record and a <strong>telehealth or primary care link</strong> can redirect the patient toward the right pathway rather than defaulting to transport.&nbsp;</p>
+        <h4 spellcheck="true">Care Coaching &amp; Pathway Redirection</h4>
+        <p spellcheck="true">For low-acuity calls, a paramedic with access to a patient’s record and a <strong>telehealth or primary care link</strong> can redirect the patient toward the right pathway rather than defaulting to transport.&nbsp;</p>
       </div>
       <div class="exp-card">
         <div class="exp-card-num">03</div>
-        <h4 contenteditable="true" spellcheck="true">Direct Reporting to Primary Care</h4>
-        <p contenteditable="true" spellcheck="true">When a paramedic responds to a call, the patient’s family physician almost never finds out. A <strong>structured prehospital encounter report</strong> sent automatically to the primary care provider creates a longitudinal picture between physician visits and enables <strong>proactive case management</strong> for frequent callers.</p>
+        <h4 spellcheck="true">Direct Reporting to Primary Care</h4>
+        <p spellcheck="true">When a paramedic responds to a call, the patient’s family physician almost never finds out. A <strong>structured prehospital encounter report</strong> sent automatically to the primary care provider creates a longitudinal picture between physician visits and enables <strong>proactive case management</strong> for frequent callers.</p>
       </div>
     </div>
     <div class="exp-summary">
-      <p contenteditable="true" spellcheck="true">Together, these three capabilities reframe the paramedic as an intelligent first point of contact in a connected care system while unburdening the ED.</p>
+      <p spellcheck="true">Together, these three capabilities reframe the paramedic as an intelligent first point of contact in a connected care system while unburdening the ED.</p>
     </div>
   </div>
 </div>
@@ -349,34 +320,34 @@
 <!-- 02 THE SCALE -->
 <div class="section-label">
   <div class="section-num">02</div>
-  <div class="section-title" contenteditable="true" spellcheck="true">The Scale: Why This Matters Now</div>
+  <div class="section-title" spellcheck="true">The Scale: Why This Matters Now</div>
 </div>
 <div class="stats-row">
   <div class="stat-card">
-    <div class="stat-num" contenteditable="true" spellcheck="true">5.1<sup>M</sup></div>
-    <div class="stat-label" contenteditable="true" spellcheck="true">Annual 911 EMS calls in Canada — every one initiated without paramedic EHR access</div>
-    <div class="stat-cite" contenteditable="true" spellcheck="true">Canadian Institute for Health Information (CIHI). <em>Emergency and Ambulatory Care.</em> Ottawa: CIHI, 2023.</div>
+    <div class="stat-num" spellcheck="true">5.1<sup>M</sup></div>
+    <div class="stat-label" spellcheck="true">Annual 911 EMS calls in Canada — every one initiated without paramedic EHR access</div>
+    <div class="stat-cite" spellcheck="true">Canadian Institute for Health Information (CIHI). <em>Emergency and Ambulatory Care.</em> Ottawa: CIHI, 2023.</div>
   </div>
   <div class="stat-card">
-    <div class="stat-num" contenteditable="true" spellcheck="true">$10<sup>B+</sup></div>
-    <div class="stat-label" contenteditable="true" spellcheck="true">Estimated annual cost of poor health data interoperability in Canada</div>
-    <div class="stat-cite" contenteditable="true" spellcheck="true">Wealth of Information: Health Data Economics. CIHI, 2025.</div>
+    <div class="stat-num" spellcheck="true">$10<sup>B+</sup></div>
+    <div class="stat-label" spellcheck="true">Estimated annual cost of poor health data interoperability in Canada</div>
+    <div class="stat-cite" spellcheck="true">Wealth of Information: Health Data Economics. CIHI, 2025.</div>
   </div>
   <div class="stat-card">
-    <div class="stat-num" contenteditable="true" spellcheck="true">15–30<sup>%</sup></div>
-    <div class="stat-label" contenteditable="true" spellcheck="true">Of ED visits estimated as avoidable with better prehospital triage and information access</div>
-    <div class="stat-cite" contenteditable="true" spellcheck="true">Canadian Institute for Health Information. <em>How Canada Compares: Results From the Commonwealth Fund’s 2023 International Health Policy Survey.</em> Ottawa: CIHI, 2023.</div>
+    <div class="stat-num" spellcheck="true">15–30<sup>%</sup></div>
+    <div class="stat-label" spellcheck="true">Of ED visits estimated as avoidable with better prehospital triage and information access</div>
+    <div class="stat-cite" spellcheck="true">Canadian Institute for Health Information. <em>How Canada Compares: Results From the Commonwealth Fund’s 2023 International Health Policy Survey.</em> Ottawa: CIHI, 2023.</div>
   </div>
 </div>
 
 <!-- 03 INTEROPERABILITY -->
 <div class="section-label">
   <div class="section-num">03</div>
-  <div class="section-title" contenteditable="true" spellcheck="true">Health Data Interoperability: The Foundation</div>
+  <div class="section-title" spellcheck="true">Health Data Interoperability: The Foundation</div>
 </div>
 <div class="interop-def">
-  <p contenteditable="true" spellcheck="true"><em>“The ability of different information systems, devices and applications to access, exchange, integrate and cooperatively use data in a coordinated manner to optimize the health of individuals and populations.”</em></p>
-  <p class="cite" contenteditable="true" spellcheck="true">— CPSA, Interoperability Saves Lives (2023) &nbsp;·&nbsp; Canada Health Act.</p>
+  <p spellcheck="true"><em>“The ability of different information systems, devices and applications to access, exchange, integrate and cooperatively use data in a coordinated manner to optimize the health of individuals and populations.”</em></p>
+  <p class="cite" spellcheck="true">— CPSA, Interoperability Saves Lives (2023) &nbsp;·&nbsp; Canada Health Act.</p>
 </div>
 <div class="flashcard-grid">
 
@@ -384,11 +355,11 @@
     <div class="flashcard-inner">
       <div class="flashcard-front">
         <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#1A8A9B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
-        <h4 contenteditable="true" spellcheck="true">Safe</h4>
+        <h4 spellcheck="true">Safe</h4>
         <span class="flashcard-hint">tap to reveal</span>
       </div>
       <div class="flashcard-back">
-        <p contenteditable="true" spellcheck="true">Reduces adverse events caused by missing or inaccurate patient data at point of care</p>
+        <p spellcheck="true">Reduces adverse events caused by missing or inaccurate patient data at point of care</p>
       </div>
     </div>
   </div>
@@ -397,11 +368,11 @@
     <div class="flashcard-inner">
       <div class="flashcard-front">
         <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#1A8A9B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-        <h4 contenteditable="true" spellcheck="true">Effective</h4>
+        <h4 spellcheck="true">Effective</h4>
         <span class="flashcard-hint">tap to reveal</span>
       </div>
       <div class="flashcard-back">
-        <p contenteditable="true" spellcheck="true">Enables evidence-based decisions informed by a complete patient medical history</p>
+        <p spellcheck="true">Enables evidence-based decisions informed by a complete patient medical history</p>
       </div>
     </div>
   </div>
@@ -410,11 +381,11 @@
     <div class="flashcard-inner">
       <div class="flashcard-front">
         <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#1A8A9B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
-        <h4 contenteditable="true" spellcheck="true">Efficient</h4>
+        <h4 spellcheck="true">Efficient</h4>
         <span class="flashcard-hint">tap to reveal</span>
       </div>
       <div class="flashcard-back">
-        <p contenteditable="true" spellcheck="true">Eliminates redundant testing, documentation, and the repeated retelling of stories</p>
+        <p spellcheck="true">Eliminates redundant testing, documentation, and the repeated retelling of stories</p>
       </div>
     </div>
   </div>
@@ -423,11 +394,11 @@
     <div class="flashcard-inner">
       <div class="flashcard-front">
         <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#1A8A9B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
-        <h4 contenteditable="true" spellcheck="true">Equitable</h4>
+        <h4 spellcheck="true">Equitable</h4>
         <span class="flashcard-hint">tap to reveal</span>
       </div>
       <div class="flashcard-back">
-        <p contenteditable="true" spellcheck="true">Ensures equal information access for all providers — including prehospital teams</p>
+        <p spellcheck="true">Ensures equal information access for all providers — including prehospital teams</p>
       </div>
     </div>
   </div>
@@ -436,11 +407,11 @@
     <div class="flashcard-inner">
       <div class="flashcard-front">
         <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#1A8A9B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-        <h4 contenteditable="true" spellcheck="true">Timely</h4>
+        <h4 spellcheck="true">Timely</h4>
         <span class="flashcard-hint">tap to reveal</span>
       </div>
       <div class="flashcard-back">
-        <p contenteditable="true" spellcheck="true">Faster interventions, smarter triage routing, and direct-to-unit transport decisions</p>
+        <p spellcheck="true">Faster interventions, smarter triage routing, and direct-to-unit transport decisions</p>
       </div>
     </div>
   </div>
@@ -449,11 +420,11 @@
     <div class="flashcard-inner">
       <div class="flashcard-front">
         <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#1A8A9B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-        <h4 contenteditable="true" spellcheck="true">Person-Centred</h4>
+        <h4 spellcheck="true">Person-Centred</h4>
         <span class="flashcard-hint">tap to reveal</span>
       </div>
       <div class="flashcard-back">
-        <p contenteditable="true" spellcheck="true">Data follows the patient — not the institution, not the custodian</p>
+        <p spellcheck="true">Data follows the patient — not the institution, not the custodian</p>
       </div>
     </div>
   </div>
@@ -463,7 +434,7 @@
 <!-- 04 HUMAN FACTOR -->
 <div class="section-label">
   <div class="section-num">04</div>
-  <div class="section-title" contenteditable="true" spellcheck="true">Human Factor Interoperability: The Prerequisite</div>
+  <div class="section-title" spellcheck="true">Human Factor Interoperability: The Prerequisite</div>
 </div>
 <p style="font-size:13px;color:var(--grey);margin-bottom:14px;font-style:italic;padding-left:4px;">You cannot achieve data interoperability without human interoperability first. Policy, governance, and culture must align before technology can connect.</p>
 <!-- HFI top row: 4 cards -->
@@ -473,10 +444,10 @@
     <div class="hfi-card-inner">
       <div class="hfi-card-front">
         <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="#6DCFDB" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
-        <h4 contenteditable="true" spellcheck="true">Governance</h4>
+        <h4 spellcheck="true">Governance</h4>
         <span class="hfi-card-hint">tap to reveal</span>
       </div>
-      <div class="hfi-card-back"><p contenteditable="true" spellcheck="true">Is anyone accountable for connecting the system?</p></div>
+      <div class="hfi-card-back"><p spellcheck="true">Is anyone accountable for connecting the system?</p></div>
     </div>
   </div>
 
@@ -484,10 +455,10 @@
     <div class="hfi-card-inner">
       <div class="hfi-card-front">
         <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="#6DCFDB" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
-        <h4 contenteditable="true" spellcheck="true">Legislation</h4>
+        <h4 spellcheck="true">Legislation</h4>
         <span class="hfi-card-hint">tap to reveal</span>
       </div>
-      <div class="hfi-card-back"><p contenteditable="true" spellcheck="true">Does the law allow paramedics to access patient data?</p></div>
+      <div class="hfi-card-back"><p spellcheck="true">Does the law allow paramedics to access patient data?</p></div>
     </div>
   </div>
 
@@ -495,10 +466,10 @@
     <div class="hfi-card-inner">
       <div class="hfi-card-front">
         <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="#6DCFDB" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14"></path></svg>
-        <h4 contenteditable="true" spellcheck="true">Regulation</h4>
+        <h4 spellcheck="true">Regulation</h4>
         <span class="hfi-card-hint">tap to reveal</span>
       </div>
-      <div class="hfi-card-back"><p contenteditable="true" spellcheck="true">Are health IT vendors required to build for interoperability?</p></div>
+      <div class="hfi-card-back"><p spellcheck="true">Are health IT vendors required to build for interoperability?</p></div>
     </div>
   </div>
 
@@ -506,10 +477,10 @@
     <div class="hfi-card-inner">
       <div class="hfi-card-front">
         <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="#6DCFDB" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
-        <h4 contenteditable="true" spellcheck="true">Policy</h4>
+        <h4 spellcheck="true">Policy</h4>
         <span class="hfi-card-hint">tap to reveal</span>
       </div>
-      <div class="hfi-card-back"><p contenteditable="true" spellcheck="true">Have organizations committed to sharing data across boundaries?</p></div>
+      <div class="hfi-card-back"><p spellcheck="true">Have organizations committed to sharing data across boundaries?</p></div>
     </div>
   </div>
 
@@ -522,10 +493,10 @@
     <div class="hfi-card-inner">
       <div class="hfi-card-front">
         <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="#6DCFDB" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
-        <h4 contenteditable="true" spellcheck="true">Literacy</h4>
+        <h4 spellcheck="true">Literacy</h4>
         <span class="hfi-card-hint">tap to reveal</span>
       </div>
-      <div class="hfi-card-back"><p contenteditable="true" spellcheck="true">Does the workforce understand why this matters?</p></div>
+      <div class="hfi-card-back"><p spellcheck="true">Does the workforce understand why this matters?</p></div>
     </div>
   </div>
 
@@ -533,10 +504,10 @@
     <div class="hfi-card-inner">
       <div class="hfi-card-front">
         <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="#6DCFDB" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.34 2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.85a16 16 0 0 0 6.29 6.29l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7a2 2 0 0 1 1.73 2.03z"></path></svg>
-        <h4 contenteditable="true" spellcheck="true">Communication</h4>
+        <h4 spellcheck="true">Communication</h4>
         <span class="hfi-card-hint">tap to reveal</span>
       </div>
-      <div class="hfi-card-back"><p contenteditable="true" spellcheck="true">Are stakeholders talking openly about who is responsible?</p></div>
+      <div class="hfi-card-back"><p spellcheck="true">Are stakeholders talking openly about who is responsible?</p></div>
     </div>
   </div>
 
@@ -544,10 +515,10 @@
     <div class="hfi-card-inner">
       <div class="hfi-card-front">
         <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="#6DCFDB" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
-        <h4 contenteditable="true" spellcheck="true">Culture</h4>
+        <h4 spellcheck="true">Culture</h4>
         <span class="hfi-card-hint">tap to reveal</span>
       </div>
-      <div class="hfi-card-back"><p contenteditable="true" spellcheck="true">Does the system put patients ahead of organizational territory?</p></div>
+      <div class="hfi-card-back"><p spellcheck="true">Does the system put patients ahead of organizational territory?</p></div>
     </div>
   </div>
 
@@ -556,46 +527,46 @@
 <!-- 05 SOLUTION -->
 <div class="section-label">
   <div class="section-num">05</div>
-  <div class="section-title" contenteditable="true" spellcheck="true">Proposed Solution: A Bidirectional, Patient-Following Data Framework</div>
+  <div class="section-title" spellcheck="true">Proposed Solution: A Bidirectional, Patient-Following Data Framework</div>
 </div>
 <p style="font-size:13px;color:var(--grey);margin-bottom:22px;font-style:italic;padding-left:4px;">Data must flow with the patient from the moment a 911 call is initiated — and feedback must flow back to paramedics after care is complete.</p>
 <div class="phases">
-  <div class="phase"><div class="phase-num">1</div><div class="phase-card"><div class="phase-title" contenteditable="true" spellcheck="true">Dispatch</div><div class="phase-desc" contenteditable="true" spellcheck="true">Patient record opened at first 911 call. History, meds &amp; allergies populated before paramedics arrive on scene.</div></div></div>
-  <div class="phase"><div class="phase-num">2</div><div class="phase-card"><div class="phase-title" contenteditable="true" spellcheck="true">Prehospital</div><div class="phase-desc" contenteditable="true" spellcheck="true">Paramedics access the full record in real time. Vitals, assessments &amp; treatment added and transmitted live.</div></div></div>
-  <div class="phase"><div class="phase-num">3</div><div class="phase-card"><div class="phase-title" contenteditable="true" spellcheck="true">Smart Routing</div><div class="phase-desc" contenteditable="true" spellcheck="true">Enriched data enables direct transport to the right unit — psych, cardiac, geriatric — bypassing unnecessary ED processing.</div></div></div>
-  <div class="phase"><div class="phase-num">4</div><div class="phase-card"><div class="phase-title" contenteditable="true" spellcheck="true">Handoff</div><div class="phase-desc" contenteditable="true" spellcheck="true">Receiving team is fully briefed before arrival. Seamless handover replaces the repeated retelling of the patient story.</div></div></div>
-  <div class="phase"><div class="phase-num">5</div><div class="phase-card"><div class="phase-title" contenteditable="true" spellcheck="true">Outcome Loop</div><div class="phase-desc" contenteditable="true" spellcheck="true">Post-discharge summary returned to paramedics. Diagnoses &amp; outcomes close the loop and fuel clinical learning.</div></div></div>
+  <div class="phase"><div class="phase-num">1</div><div class="phase-card"><div class="phase-title" spellcheck="true">Dispatch</div><div class="phase-desc" spellcheck="true">Patient record opened at first 911 call. History, meds &amp; allergies populated before paramedics arrive on scene.</div></div></div>
+  <div class="phase"><div class="phase-num">2</div><div class="phase-card"><div class="phase-title" spellcheck="true">Prehospital</div><div class="phase-desc" spellcheck="true">Paramedics access the full record in real time. Vitals, assessments &amp; treatment added and transmitted live.</div></div></div>
+  <div class="phase"><div class="phase-num">3</div><div class="phase-card"><div class="phase-title" spellcheck="true">Smart Routing</div><div class="phase-desc" spellcheck="true">Enriched data enables direct transport to the right unit — psych, cardiac, geriatric — bypassing unnecessary ED processing.</div></div></div>
+  <div class="phase"><div class="phase-num">4</div><div class="phase-card"><div class="phase-title" spellcheck="true">Handoff</div><div class="phase-desc" spellcheck="true">Receiving team is fully briefed before arrival. Seamless handover replaces the repeated retelling of the patient story.</div></div></div>
+  <div class="phase"><div class="phase-num">5</div><div class="phase-card"><div class="phase-title" spellcheck="true">Outcome Loop</div><div class="phase-desc" spellcheck="true">Post-discharge summary returned to paramedics. Diagnoses &amp; outcomes close the loop and fuel clinical learning.</div></div></div>
 </div>
 
 <!-- 06 WHY IT WORKS -->
 <div class="section-label">
   <div class="section-num">06</div>
-  <div class="section-title" contenteditable="true" spellcheck="true">Why It Will Work</div>
+  <div class="section-title" spellcheck="true">Why It Will Work</div>
 </div>
 <div class="why-grid">
   <div class="why-card">
     <div class="why-icon-wrap"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1A8A9B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1"></rect><line x1="9" y1="12" x2="15" y2="12"></line><line x1="9" y1="16" x2="13" y2="16"></line></svg></div>
-    <div><h4 contenteditable="true" spellcheck="true">Evidence Base</h4><p contenteditable="true" spellcheck="true">Community paramedicine with integrated data access shows improved outcomes, reduced ED use, and higher patient satisfaction (Bigham et al., 2013; Dainty et al., 2018).</p></div>
+    <div><h4 spellcheck="true">Evidence Base</h4><p spellcheck="true">Community paramedicine with integrated data access shows improved outcomes, reduced ED use, and higher patient satisfaction (Bigham et al., 2013; Dainty et al., 2018).</p></div>
   </div>
   <div class="why-card">
     <div class="why-icon-wrap"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1A8A9B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17.8 19.2L16 11l3.5-3.5C21 6 21 4 19 4c-1 0-2 1-3.5 2.5L9 11 2.8 9.2c-.6-.2-.6-1 0-1.2L21 3l-2 18c-.2.6-1 .6-1.2 0z"></path></svg></div>
-    <div><h4 contenteditable="true" spellcheck="true">Aviation</h4><p contenteditable="true" spellcheck="true">Aviation coordinates thousands of aircraft globally via a single interoperable standard, mandated by governance, not technology. Healthcare can do the same.</p></div>
+    <div><h4 spellcheck="true">Aviation</h4><p spellcheck="true">Aviation coordinates thousands of aircraft globally via a single interoperable standard, mandated by governance, not technology. Healthcare can do the same.</p></div>
   </div>
   <div class="why-card">
     <div class="why-icon-wrap"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1A8A9B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg></div>
-    <div><h4 contenteditable="true" spellcheck="true">Banking</h4><p contenteditable="true" spellcheck="true">Your debit card works at any ATM worldwide through technical standards + regulatory mandates. Patient data can follow patients the same way.</p></div>
+    <div><h4 spellcheck="true">Banking</h4><p spellcheck="true">Your debit card works at any ATM worldwide through technical standards + regulatory mandates. Patient data can follow patients the same way.</p></div>
   </div>
   <div class="why-card">
     <div class="why-icon-wrap"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1A8A9B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 1 21 5 17 9"></polyline><path d="M3 11V9a4 4 0 0 1 4-4h14"></path><polyline points="7 23 3 19 7 15"></polyline><path d="M21 13v2a4 4 0 0 1-4 4H3"></path></svg></div>
-    <div><h4 contenteditable="true" spellcheck="true">Bidirectional Learning</h4><p contenteditable="true" spellcheck="true">When paramedics receive outcome feedback — diagnoses, treatments, discharge — their clinical knowledge grows. Closing the loop elevates the entire profession.</p></div>
+    <div><h4 spellcheck="true">Bidirectional Learning</h4><p spellcheck="true">When paramedics receive outcome feedback — diagnoses, treatments, discharge — their clinical knowledge grows. Closing the loop elevates the entire profession.</p></div>
   </div>
   <div class="why-card">
     <div class="why-icon-wrap"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1A8A9B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="22" x2="21" y2="22"></line><line x1="6" y1="18" x2="6" y2="11"></line><line x1="10" y1="18" x2="10" y2="11"></line><line x1="14" y1="18" x2="14" y2="11"></line><line x1="18" y1="18" x2="18" y2="11"></line><polygon points="12 2 20 7 4 7"></polygon></svg></div>
-    <div><h4 contenteditable="true" spellcheck="true">Governance-First Design</h4><p contenteditable="true" spellcheck="true">Prior efforts failed by deploying technology into fragmented governance. This framework builds policy and legislative alignment before any procurement.</p></div>
+    <div><h4 spellcheck="true">Governance-First Design</h4><p spellcheck="true">Prior efforts failed by deploying technology into fragmented governance. This framework builds policy and legislative alignment before any procurement.</p></div>
   </div>
   <div class="why-card">
     <div class="why-icon-wrap"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1A8A9B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></div>
-    <div><h4 contenteditable="true" spellcheck="true">The Moral Imperative</h4><p contenteditable="true" spellcheck="true">Withholding clinical data from frontline providers is an active, preventable harm. As stewards of health data, we are obligated to act.</p></div>
+    <div><h4 spellcheck="true">The Moral Imperative</h4><p spellcheck="true">Withholding clinical data from frontline providers is an active, preventable harm. As stewards of health data, we are obligated to act.</p></div>
   </div>
 </div>
 
@@ -604,11 +575,11 @@
 <!-- CLOSING -->
 <div class="closing">
   <div class="closing-quotes">
-    <div class="closing-q"><div class="closing-bar"></div><p contenteditable="true" spellcheck="true">Paramedics are the first clinical touch in a patient’s care journey — yet the last to have access to their information.</p></div>
-    <div class="closing-q"><div class="closing-bar"></div><p contenteditable="true" spellcheck="true">A healthcare system that withholds data from its frontline providers is a system that accepts preventable harm.</p></div>
-    <div class="closing-q"><div class="closing-bar"></div><p contenteditable="true" spellcheck="true">As conversations and policies continue to evolve, Paramedics must be involved</p></div>
+    <div class="closing-q"><div class="closing-bar"></div><p spellcheck="true">Paramedics are the first clinical touch in a patient’s care journey — yet the last to have access to their information.</p></div>
+    <div class="closing-q"><div class="closing-bar"></div><p spellcheck="true">A healthcare system that withholds data from its frontline providers is a system that accepts preventable harm.</p></div>
+    <div class="closing-q"><div class="closing-bar"></div><p spellcheck="true">As conversations and policies continue to evolve, Paramedics must be involved</p></div>
   </div>
-  <div class="closing-cta" contenteditable="true" spellcheck="true">A robust Canadian health data ecosystem includes Paramedics.</div>
+  <div class="closing-cta" spellcheck="true">A robust Canadian health data ecosystem includes Paramedics.</div>
 </div>
 
 </div>
@@ -617,85 +588,6 @@
   Bigham et al. (2013) &nbsp;·&nbsp; Dainty et al. (2018) &nbsp;·&nbsp; Rasku et al. (2019) &nbsp;·&nbsp; CPSA — Interoperability Saves Lives (2023) &nbsp;·&nbsp; National Academy of Medicine &nbsp;·&nbsp; Canada Health Act<br>
   U of T EMHI &nbsp;·&nbsp; 2026
 </div>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  // All editable selectors — expansion panel uses separate handling below
-  const editableSelectors = [
-    '.problem-card p',
-    '.harm-box h3',
-    '.harm-box p',
-    '.dual-harm-label',
-    '.stat-num',
-    '.stat-label',
-    '.stat-cite',
-    '.interop-def p',
-    '.flashcard-front h4',
-    '.flashcard-back p',
-    '.hfi-card-front h4',
-    '.hfi-card-back p',
-    '.phase-title',
-    '.phase-desc',
-    '.why-card h4',
-    '.why-card p',
-    '.closing-q p',
-    '.closing-cta',
-    '.section-title',
-    '.header-sub',
-    '.header h1',
-    '.exp-intro',
-    '.exp-card h4',
-    '.exp-card p',
-    '.exp-summary p',
-  ];
-
-  editableSelectors.forEach(function(sel) {
-    document.querySelectorAll(sel).forEach(function(el) {
-      el.setAttribute('contenteditable', 'true');
-      el.setAttribute('spellcheck', 'true');
-      // Stop click from bubbling up to expansion trigger
-      el.addEventListener('click', function(e) { e.stopPropagation(); });
-    });
-  });
-
-  // Save / load
-  function saveContent() {
-    var data = {};
-    document.querySelectorAll('[contenteditable]').forEach(function(el, i) {
-      data['el_' + i] = el.innerHTML;
-    });
-    try { localStorage.setItem('infographic_v2', JSON.stringify(data)); } catch(e) {}
-    var msg = document.getElementById('saved-msg');
-    msg.style.opacity = '1';
-    setTimeout(function(){ msg.style.opacity = '0'; }, 2000);
-  }
-
-  try {
-    var saved = JSON.parse(localStorage.getItem('infographic_v2') || 'null');
-    if (saved) {
-      document.querySelectorAll('[contenteditable]').forEach(function(el, i) {
-        if (saved['el_' + i] !== undefined) el.innerHTML = saved['el_' + i];
-      });
-    }
-  } catch(e) {}
-
-  document.getElementById('save-btn').addEventListener('click', saveContent);
-  document.addEventListener('input', function(e) {
-    if (e.target.hasAttribute('contenteditable')) {
-      clearTimeout(window._autoSave);
-      window._autoSave = setTimeout(saveContent, 1200);
-    }
-  });
-
-  document.getElementById('print-btn').addEventListener('click', function() { window.print(); });
-  document.getElementById('reset-btn').addEventListener('click', function() {
-    if (confirm('Reset all edits to the original text?')) {
-      localStorage.removeItem('infographic_v2');
-      location.reload();
-    }
-  });
-});
-</script>
 
 
 </body></html>
