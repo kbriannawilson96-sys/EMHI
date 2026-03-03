@@ -22,13 +22,6 @@
   * { margin:0; padding:0; box-sizing:border-box; }
   body { font-family:'DM Sans',sans-serif; background:var(--offwhite); color:var(--text); width:900px; margin:0 auto; padding-top:52px; }
 
-
-
-  /* CONTENTEDITABLE */
-  [contenteditable] { outline:none; border-radius:3px; transition:background 0.15s, box-shadow 0.15s; cursor:text; }
-  [contenteditable]:hover { background:rgba(26,138,155,0.1); box-shadow:0 0 0 2px rgba(26,138,155,0.25); }
-  [contenteditable]:focus { background:rgba(26,138,155,0.15); box-shadow:0 0 0 2px rgba(26,138,155,0.5); }
-
   /* HEADER */
   .header { background:var(--navy); padding:52px 56px 44px; position:relative; overflow:hidden; }
   .header::before { content:''; position:absolute; top:-60px; right:-60px; width:340px; height:340px; border-radius:50%; background:radial-gradient(circle,rgba(26,138,155,.25) 0%,transparent 70%); }
@@ -235,16 +228,6 @@
 </style>
 </head>
 <body>
-
-<!-- EDIT BAR -->
-<div class="edit-bar">
-  <span class="edit-bar-label">&#9998; Edit Mode</span>
-  <span class="edit-bar-hint">Click any text on the page to edit it. Changes are saved automatically.</span>
-  <span class="edit-saved-msg" id="saved-msg">&#10003; Saved</span>
-  <button class="edit-btn edit-btn-ghost" id="reset-btn">Reset</button>
-  <button class="edit-btn edit-btn-ghost" id="print-btn">&#128438; Print / PDF</button>
-  <button class="edit-btn edit-btn-save" id="save-btn">Save Changes</button>
-</div>
 
 <!-- HEADER -->
 <div class="header">
@@ -606,83 +589,5 @@
   U of T EMHI &nbsp;&middot;&nbsp; 2026
 </div>
 
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  // All editable selectors — expansion panel uses separate handling below
-  const editableSelectors = [
-    '.problem-card p',
-    '.harm-box h3',
-    '.harm-box p',
-    '.dual-harm-label',
-    '.stat-num',
-    '.stat-label',
-    '.stat-cite',
-    '.interop-def p',
-    '.flashcard-front h4',
-    '.flashcard-back p',
-    '.hfi-card-front h4',
-    '.hfi-card-back p',
-    '.phase-title',
-    '.phase-desc',
-    '.why-card h4',
-    '.why-card p',
-    '.closing-q p',
-    '.closing-cta',
-    '.section-title',
-    '.header-sub',
-    '.header h1',
-    '.exp-intro',
-    '.exp-card h4',
-    '.exp-card p',
-    '.exp-summary p',
-  ];
-
-  editableSelectors.forEach(function(sel) {
-    document.querySelectorAll(sel).forEach(function(el) {
-      el.setAttribute('contenteditable', 'true');
-      el.setAttribute('spellcheck', 'true');
-      // Stop click from bubbling up to expansion trigger
-      el.addEventListener('click', function(e) { e.stopPropagation(); });
-    });
-  });
-
-  // Save / load
-  function saveContent() {
-    var data = {};
-    document.querySelectorAll('[contenteditable]').forEach(function(el, i) {
-      data['el_' + i] = el.innerHTML;
-    });
-    try { localStorage.setItem('infographic_v2', JSON.stringify(data)); } catch(e) {}
-    var msg = document.getElementById('saved-msg');
-    msg.style.opacity = '1';
-    setTimeout(function(){ msg.style.opacity = '0'; }, 2000);
-  }
-
-  try {
-    var saved = JSON.parse(localStorage.getItem('infographic_v2') || 'null');
-    if (saved) {
-      document.querySelectorAll('[contenteditable]').forEach(function(el, i) {
-        if (saved['el_' + i] !== undefined) el.innerHTML = saved['el_' + i];
-      });
-    }
-  } catch(e) {}
-
-  document.getElementById('save-btn').addEventListener('click', saveContent);
-  document.addEventListener('input', function(e) {
-    if (e.target.hasAttribute('contenteditable')) {
-      clearTimeout(window._autoSave);
-      window._autoSave = setTimeout(saveContent, 1200);
-    }
-  });
-
-  document.getElementById('print-btn').addEventListener('click', function() { window.print(); });
-  document.getElementById('reset-btn').addEventListener('click', function() {
-    if (confirm('Reset all edits to the original text?')) {
-      localStorage.removeItem('infographic_v2');
-      location.reload();
-    }
-  });
-});
-</script>
 </body>
 </html>
