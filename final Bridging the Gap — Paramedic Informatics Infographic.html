@@ -22,21 +22,7 @@
   * { margin:0; padding:0; box-sizing:border-box; }
   body { font-family:'DM Sans',sans-serif; background:var(--offwhite); color:var(--text); width:900px; margin:0 auto; padding-top:52px; }
 
-  /* EDIT BAR */
-  .edit-bar {
-    position:fixed; top:0; left:0; right:0; z-index:9999;
-    background:#0F2240; border-bottom:2px solid #24AABF;
-    padding:10px 24px; display:flex; align-items:center; gap:16px;
-    font-family:'DM Sans',sans-serif; box-shadow:0 2px 12px rgba(0,0,0,0.3);
-  }
-  .edit-bar-label { font-size:12px; font-weight:600; letter-spacing:1.5px; text-transform:uppercase; color:#6DCFDB; }
-  .edit-bar-hint  { font-size:12px; color:rgba(255,255,255,0.5); flex:1; }
-  .edit-btn { padding:6px 18px; border-radius:6px; border:none; font-family:'DM Sans',sans-serif; font-size:12px; font-weight:600; cursor:pointer; transition:all 0.15s; }
-  .edit-btn-ghost { background:transparent; border:1px solid rgba(36,170,191,0.5); color:#6DCFDB; }
-  .edit-btn-ghost:hover { background:rgba(36,170,191,0.15); }
-  .edit-btn-save  { background:#1A8A9B; color:white; }
-  .edit-btn-save:hover { background:#24AABF; }
-  .edit-saved-msg { font-size:11px; color:#6DCFDB; opacity:0; transition:opacity 0.3s; }
+
 
   /* CONTENTEDITABLE */
   [contenteditable] { outline:none; border-radius:3px; transition:background 0.15s, box-shadow 0.15s; cursor:text; }
