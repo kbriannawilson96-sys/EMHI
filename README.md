@@ -436,9 +436,7 @@
   <div class="section-num">04</div>
   <div class="section-title" spellcheck="true">Human Factor Interoperability: The Prerequisite</div>
 </div>
-<p style="font-size:13px;color:var(--grey);margin-bottom:14px;font-style:italic;padding-left:4px;">"We must take the
-disparate responsibilities for health data stewardship and orient them in a way that moves us toward a more
-collaborative and person-centred system." - Dr. Vivek Goel </p>
+<p style="font-size:13px;color:var(--grey);margin-bottom:14px;font-style:italic;padding-left:4px;">"We recognize that the fundamental challenge we face is not one of technology, rather it is one of culture." - Dr. Vivek Goel </p>
 <!-- HFI top row: 4 cards -->
 <div class="hfi-grid-top">
 
