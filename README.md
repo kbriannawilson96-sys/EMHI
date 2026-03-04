@@ -608,6 +608,411 @@
     <p style="text-align:center; margin-top:18px; padding-top:14px; border-top:1px solid #D4E6F0; font-size:11px; color:var(--grey);">University of Toronto Executive Master of Health Informatics &nbsp;&middot;&nbsp; 2026 &nbsp;&middot;&nbsp; K. Brianna Wilson </p>
   </div>
 </div>
+<br>
+<br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Infrastructure Framework — Paramedic Informatics</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy:    #0F2240;
+    --navy2:   #1C3557;
+    --teal:    #1A8A9B;
+    --teal2:   #24AABF;
+    --teal3:   #6DCFDB;
+    --amber:   #E8963A;
+    --offwhite:#F4F8FB;
+    --ltblue:  #D6EBF2;
+    --white:   #FFFFFF;
+    --grey:    #6B7B8D;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:'DM Sans',sans-serif; background:var(--offwhite); color:#1A2B3C; width:900px; margin:0 auto; padding:40px; }
 
+  /* HEADER */
+  .header {
+    background:var(--navy); border-radius:14px;
+    padding:36px 44px 32px; margin-bottom:28px;
+    position:relative; overflow:hidden;
+  }
+  .header::before { content:''; position:absolute; top:-60px; right:-60px; width:300px; height:300px; border-radius:50%; background:radial-gradient(circle,rgba(26,138,155,.3) 0%,transparent 70%); }
+  .header-tag { font-family:'DM Mono',monospace; font-size:10px; letter-spacing:3px; color:var(--teal3); text-transform:uppercase; margin-bottom:12px; }
+  .header h1 { font-family:'Playfair Display',serif; font-size:38px; font-weight:900; color:var(--white); line-height:1.1; margin-bottom:10px; position:relative; z-index:1; }
+  .header h1 span { color:var(--teal2); }
+  .header-sub { font-size:13px; color:rgba(255,255,255,.6); line-height:1.6; position:relative; z-index:1; max-width:520px; }
+
+  /* SEQUENCE BANNER */
+  .seq-banner {
+    background:var(--ltblue); border:1px solid rgba(26,138,155,.3);
+    border-left:4px solid var(--teal2);
+    border-radius:0 10px 10px 0;
+    padding:14px 20px; margin-bottom:24px;
+    font-size:13px; color:var(--navy2); line-height:1.6;
+  }
+  .seq-banner strong { color:var(--teal); }
+
+  /* QUADRANT GRID */
+  .quad-grid { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:24px; }
+
+  .quad {
+    background:var(--white);
+    border:1px solid #D4E6F0;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 4px 18px rgba(15,34,64,.07);
+  }
+
+  /* Quad header */
+  .quad-header {
+    padding:18px 22px 14px;
+    display:flex; align-items:center; gap:14px;
+    border-bottom:1px solid #E8F4F8;
+  }
+  .quad-icon-wrap {
+    width:46px; height:46px; border-radius:12px;
+    display:flex; align-items:center; justify-content:center;
+    flex-shrink:0;
+  }
+  .quad-header-text {}
+  .quad-order {
+    font-family:'DM Mono',monospace;
+    font-size:9px; letter-spacing:2px; text-transform:uppercase;
+    margin-bottom:2px;
+  }
+  .quad-title {
+    font-family:'Playfair Display',serif;
+    font-size:18px; font-weight:700; color:var(--navy2);
+  }
+
+  /* Colour theming per quadrant */
+  .quad.people .quad-header  { background:#F0FAFB; }
+  .quad.people .quad-icon-wrap { background:rgba(26,138,155,.12); }
+  .quad.people .quad-order   { color:var(--teal); }
+  .quad.people .quad-title   { color:#0F4D5A; }
+
+  .quad.process .quad-header { background:#FFF8EE; }
+  .quad.process .quad-icon-wrap { background:rgba(232,150,58,.12); }
+  .quad.process .quad-order  { color:var(--amber); }
+  .quad.process .quad-title  { color:#6B3B00; }
+
+  .quad.tech .quad-header    { background:#EEF2FF; }
+  .quad.tech .quad-icon-wrap { background:rgba(99,102,241,.12); }
+  .quad.tech .quad-order     { color:#6366F1; }
+  .quad.tech .quad-title     { color:#2D2F7A; }
+
+  .quad.org .quad-header     { background:#F3F0FF; }
+  .quad.org .quad-icon-wrap  { background:rgba(139,92,246,.12); }
+  .quad.org .quad-order      { color:#8B5CF6; }
+  .quad.org .quad-title      { color:#3B1F6B; }
+
+  /* Quad body */
+  .quad-body { padding:16px 22px 20px; }
+
+  .quad-item {
+    display:flex; gap:10px; align-items:flex-start;
+    padding:9px 0;
+    border-bottom:1px solid #F0F5F8;
+  }
+  .quad-item:last-child { border-bottom:none; padding-bottom:0; }
+
+  .quad-dot {
+    width:7px; height:7px; border-radius:50%;
+    flex-shrink:0; margin-top:6px;
+  }
+  .quad.people  .quad-dot { background:var(--teal2); }
+  .quad.process .quad-dot { background:var(--amber); }
+  .quad.tech    .quad-dot { background:#6366F1; }
+  .quad.org     .quad-dot { background:#8B5CF6; }
+
+  .quad-item-content {}
+  .quad-item-label {
+    font-size:12px; font-weight:700; color:var(--navy2);
+    margin-bottom:2px;
+  }
+  .quad-item-desc {
+    font-size:11.5px; color:var(--grey); line-height:1.55;
+  }
+
+  /* BOTTOM CALLOUT */
+  .callout {
+    background:var(--navy); border-radius:12px;
+    padding:24px 32px;
+    display:grid; grid-template-columns:1fr auto;
+    align-items:center; gap:24px;
+  }
+  .callout-text {}
+  .callout-label {
+    font-family:'DM Mono',monospace; font-size:9px;
+    letter-spacing:2.5px; text-transform:uppercase;
+    color:var(--teal3); margin-bottom:8px;
+  }
+  .callout-quote {
+    font-family:'Playfair Display',serif;
+    font-size:17px; font-weight:700; color:var(--white);
+    line-height:1.45;
+  }
+  .callout-quote span { color:var(--teal2); }
+  .seq-pills { display:flex; flex-direction:column; gap:8px; }
+  .seq-pill {
+    display:flex; align-items:center; gap:8px;
+    background:rgba(255,255,255,.06);
+    border:1px solid rgba(36,170,191,.2);
+    border-radius:8px; padding:6px 14px;
+    white-space:nowrap;
+  }
+  .seq-pill-num {
+    font-family:'DM Mono',monospace;
+    font-size:11px; font-weight:600;
+    color:var(--teal3);
+  }
+  .seq-pill-name {
+    font-size:11px; font-weight:600; color:rgba(255,255,255,.7);
+  }
+
+  /* FOOTER */
+  .footer {
+    text-align:center; margin-top:20px;
+    font-size:10.5px; color:var(--grey);
+    border-top:1px solid #D4E6F0; padding-top:14px;
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <div class="header-tag">U of T EMHI &bull; 2026</div>
+  <h1>Infrastructure for <span>System Change</span></h1>
+  <p class="header-sub">Four categories of infrastructure — ordered deliberately, because sequence determines whether the project succeeds or fails.</p>
+</div>
+
+<!-- SEQUENCE NOTE -->
+<div class="seq-banner">
+  <strong>Sequence matters.</strong> Technology is listed third — not because it is unimportant, but because deploying it without the first two layers produces expensive, fragmented systems. Every failed health IT implementation followed the wrong order.
+</div>
+
+<!-- FOUR QUADRANTS -->
+<div class="quad-grid">
+
+  <!-- PEOPLE -->
+  <div class="quad people">
+    <div class="quad-header">
+      <div class="quad-icon-wrap">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#1A8A9B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+      </div>
+      <div class="quad-header-text">
+        <div class="quad-order">01 &mdash; First</div>
+        <div class="quad-title">People</div>
+      </div>
+    </div>
+    <div class="quad-body">
+      <div class="quad-item">
+        <div class="quad-dot"></div>
+        <div class="quad-item-content">
+          <div class="quad-item-label">Clinical Informaticist</div>
+          <div class="quad-item-desc">Bridge between prehospital care and health IT — the rarest and most essential role</div>
+        </div>
+      </div>
+      <div class="quad-item">
+        <div class="quad-dot"></div>
+        <div class="quad-item-content">
+          <div class="quad-item-label">Health IT Project Manager</div>
+          <div class="quad-item-desc">Someone who has navigated data sharing agreements — not a generic PM</div>
+        </div>
+      </div>
+      <div class="quad-item">
+        <div class="quad-dot"></div>
+        <div class="quad-item-content">
+          <div class="quad-item-label">Change Management Lead</div>
+          <div class="quad-item-desc">Understands frontline clinical culture — can work the station floor and the boardroom</div>
+        </div>
+      </div>
+      <div class="quad-item">
+        <div class="quad-dot"></div>
+        <div class="quad-item-content">
+          <div class="quad-item-label">Data Analyst / Biostatistician</div>
+          <div class="quad-item-desc">Designs outcome measurement and produces publishable, policy-relevant evidence</div>
+        </div>
+      </div>
+      <div class="quad-item">
+        <div class="quad-dot"></div>
+        <div class="quad-item-content">
+          <div class="quad-item-label">Privacy &amp; Legal Advisor (Embedded)</div>
+          <div class="quad-item-desc">Working to enable sharing — not advising on what cannot be done</div>
+        </div>
+      </div>
+      <div class="quad-item">
+        <div class="quad-dot"></div>
+        <div class="quad-item-content">
+          <div class="quad-item-label">Frontline Paramedics (Co-designers)</div>
+          <div class="quad-item-desc">Compensated, involved throughout — their operational knowledge is irreplaceable</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROCESS -->
+  <div class="quad process">
+    <div class="quad-header">
+      <div class="quad-icon-wrap">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#E8963A" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+      </div>
+      <div class="quad-header-text">
+        <div class="quad-order">02 &mdash; Second</div>
+        <div class="quad-title">Process</div>
+      </div>
+    </div>
+    <div class="quad-body">
+      <div class="quad-item">
+        <div class="quad-dot"></div>
+        <div class="quad-item-content">
+          <div class="quad-item-label">Data Sharing Agreement</div>
+          <div class="quad-item-desc">Legally reviewed, signed by EMS and hospital partners — before any data flows</div>
+        </div>
+      </div>
+      <div class="quad-item">
+        <div class="quad-dot"></div>
+        <div class="quad-item-content">
+          <div class="quad-item-label">Privacy Impact Assessment</div>
+          <div class="quad-item-desc">Completed and on file before a single patient record is accessed</div>
+        </div>
+      </div>
+      <div class="quad-item">
+        <div class="quad-dot"></div>
+        <div class="quad-item-content">
+          <div class="quad-item-label">Clinical Workflow Design</div>
+          <div class="quad-item-desc">Paramedics and ED staff co-define how and when data is accessed — the system fits the work</div>
+        </div>
+      </div>
+      <div class="quad-item">
+        <div class="quad-dot"></div>
+        <div class="quad-item-content">
+          <div class="quad-item-label">Structured Training Program</div>
+          <div class="quad-item-desc">Not just how to use the platform — why the information matters clinically</div>
+        </div>
+      </div>
+      <div class="quad-item">
+        <div class="quad-dot"></div>
+        <div class="quad-item-content">
+          <div class="quad-item-label">Joint QI Committee</div>
+          <div class="quad-item-desc">EMS and hospital representation — meets regularly to identify and solve problems early</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TECHNOLOGY -->
+  <div class="quad tech">
+    <div class="quad-header">
+      <div class="quad-icon-wrap">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#6366F1" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+      </div>
+      <div class="quad-header-text">
+        <div class="quad-order">03 &mdash; Third</div>
+        <div class="quad-title">Technology</div>
+      </div>
+    </div>
+    <div class="quad-body">
+      <div class="quad-item">
+        <div class="quad-dot"></div>
+        <div class="quad-item-content">
+          <div class="quad-item-label">HL7 FHIR-Compliant ePCR Platform</div>
+          <div class="quad-item-desc">Several exist in the Canadian market — selected for FHIR compliance and usability in a moving vehicle</div>
+        </div>
+      </div>
+      <div class="quad-item">
+        <div class="quad-dot"></div>
+        <div class="quad-item-content">
+          <div class="quad-item-label">API Connection to Provincial EHR / Hospital EMR</div>
+          <div class="quad-item-desc">Built on FHIR R4 — technically straightforward when both systems speak the same standard</div>
+        </div>
+      </div>
+      <div class="quad-item">
+        <div class="quad-dot"></div>
+        <div class="quad-item-content">
+          <div class="quad-item-label">Medical Device Integration</div>
+          <div class="quad-item-desc">Vital signs and ECG data captured automatically — no manual re-entry from the ambulance</div>
+        </div>
+      </div>
+      <div class="quad-item">
+        <div class="quad-dot"></div>
+        <div class="quad-item-content">
+          <div class="quad-item-label">Role-Based Access Control</div>
+          <div class="quad-item-desc">Paramedics see what they need, access is logged, audit trail satisfies provincial privacy requirements</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ORGANIZATIONAL -->
+  <div class="quad org">
+    <div class="quad-header">
+      <div class="quad-icon-wrap">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#8B5CF6" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="22" x2="21" y2="22"/><line x1="6" y1="18" x2="6" y2="11"/><line x1="10" y1="18" x2="10" y2="11"/><line x1="14" y1="18" x2="14" y2="11"/><line x1="18" y1="18" x2="18" y2="11"/><polygon points="12 2 20 7 4 7"/></svg>
+      </div>
+      <div class="quad-header-text">
+        <div class="quad-order">04 &mdash; Fourth</div>
+        <div class="quad-title">Organizational</div>
+      </div>
+    </div>
+    <div class="quad-body">
+      <div class="quad-item">
+        <div class="quad-dot"></div>
+        <div class="quad-item-content">
+          <div class="quad-item-label">Joint Governance Committee</div>
+          <div class="quad-item-desc">EMS, hospital, and health authority representation — decision-making authority, not advisory</div>
+        </div>
+      </div>
+      <div class="quad-item">
+        <div class="quad-dot"></div>
+        <div class="quad-item-content">
+          <div class="quad-item-label">Executive Sponsorship (Both Sides)</div>
+          <div class="quad-item-desc">A champion in EMS and a champion in hospital leadership — willing to remove barriers</div>
+        </div>
+      </div>
+      <div class="quad-item">
+        <div class="quad-dot"></div>
+        <div class="quad-item-content">
+          <div class="quad-item-label">Escalation Path for Data Disputes</div>
+          <div class="quad-item-desc">A defined process when a privacy officer says no — resolved without stalling the project</div>
+        </div>
+      </div>
+      <div class="quad-item">
+        <div class="quad-dot"></div>
+        <div class="quad-item-content">
+          <div class="quad-item-label">Sustainability Plan</div>
+          <div class="quad-item-desc">Pathway to operational funding before the pilot ends — the most common cause of pilot death is running out of money</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- BOTTOM CALLOUT -->
+<div class="callout">
+  <div class="callout-text">
+    <div class="callout-label">The Core Principle</div>
+    <div class="callout-quote">Technology is the <span>easiest</span> part of this list.<br>Policy, people, and governance are where projects live — or die.</div>
+  </div>
+  <div class="seq-pills">
+    <div class="seq-pill"><span class="seq-pill-num">01</span><span class="seq-pill-name">Policy &amp; Legal</span></div>
+    <div class="seq-pill"><span class="seq-pill-num">02</span><span class="seq-pill-name">People &amp; Process</span></div>
+    <div class="seq-pill"><span class="seq-pill-num">03</span><span class="seq-pill-name">Technology</span></div>
+    <div class="seq-pill"><span class="seq-pill-num">04</span><span class="seq-pill-name">Organizational</span></div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  U of T EMHI &nbsp;&middot;&nbsp; 2026 &nbsp;&middot;&nbsp; Bridging the Gap: Paramedics, Health Informatics &amp; the Imperative for Continuity of Care
+</div>
+
+</body>
+</html>
 
 </body></html>
