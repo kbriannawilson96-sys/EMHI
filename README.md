@@ -809,21 +809,21 @@
         <div class="quad-dot"></div>
         <div class="quad-item-content">
           <div class="quad-item-label">Clinical Informaticist</div>
-          <div class="quad-item-desc">Bridge between prehospital care and health IT — the rarest and most essential role</div>
+          <div class="quad-item-desc">Bridge between prehospital care and health IT </div>
         </div>
       </div>
       <div class="quad-item">
         <div class="quad-dot"></div>
         <div class="quad-item-content">
           <div class="quad-item-label">Health IT Project Manager</div>
-          <div class="quad-item-desc">Someone who has navigated data sharing agreements — not a generic PM</div>
+          <div class="quad-item-desc">Someone who has navigated data sharing agreements</div>
         </div>
       </div>
       <div class="quad-item">
         <div class="quad-dot"></div>
         <div class="quad-item-content">
           <div class="quad-item-label">Change Management Lead</div>
-          <div class="quad-item-desc">Understands frontline clinical culture — can work the station floor and the boardroom</div>
+          <div class="quad-item-desc">Understands frontline clinical culture </div>
         </div>
       </div>
       <div class="quad-item">
@@ -837,7 +837,7 @@
         <div class="quad-dot"></div>
         <div class="quad-item-content">
           <div class="quad-item-label">Privacy &amp; Legal Advisor (Embedded)</div>
-          <div class="quad-item-desc">Working to enable sharing — not advising on what cannot be done</div>
+          <div class="quad-item-desc">Working to enable sharing </div>
         </div>
       </div>
       <div class="quad-item">
@@ -866,7 +866,7 @@
         <div class="quad-dot"></div>
         <div class="quad-item-content">
           <div class="quad-item-label">Data Sharing Agreement</div>
-          <div class="quad-item-desc">Legally reviewed, signed by EMS and hospital partners — before any data flows</div>
+          <div class="quad-item-desc">Legally reviewed, signed by EMS and hospital partners</div>
         </div>
       </div>
       <div class="quad-item">
@@ -880,7 +880,7 @@
         <div class="quad-dot"></div>
         <div class="quad-item-content">
           <div class="quad-item-label">Clinical Workflow Design</div>
-          <div class="quad-item-desc">Paramedics and ED staff co-define how and when data is accessed — the system fits the work</div>
+          <div class="quad-item-desc">Paramedics and ED staff co-define how and when data is accessed</div>
         </div>
       </div>
       <div class="quad-item">
@@ -916,7 +916,7 @@
         <div class="quad-dot"></div>
         <div class="quad-item-content">
           <div class="quad-item-label">HL7 FHIR-Compliant ePCR Platform</div>
-          <div class="quad-item-desc">Several exist in the Canadian market — selected for FHIR compliance and usability in a moving vehicle</div>
+          <div class="quad-item-desc">Several exist in the Canadian market — selected for FHIR compliance and usability in a moving ambulance</div>
         </div>
       </div>
       <div class="quad-item">
