@@ -605,7 +605,7 @@ collaborative and person-centred system." - Dr. Vivek Goel </p>
       <li>Benny G. Provider-centric models of care in which most consumers of healthcare are passive. <em>Internal Medicine Journal.</em> 2015;45(8):795-797. doi:10.1111/imj.12828</li>
       <li>Wealth of Information: Health Data Economics | CIHI. Accessed March 2, 2026. <a href="https://www.cihi.ca/en/wealth-of-information-health-data-economics" style="color:var(--teal);">cihi.ca</a></li>
     </ol>
-    <p style="text-align:center; margin-top:18px; padding-top:14px; border-top:1px solid #D4E6F0; font-size:11px; color:var(--grey);">U of T EMHI &nbsp;&middot;&nbsp; 2026</p>
+    <p style="text-align:center; margin-top:18px; padding-top:14px; border-top:1px solid #D4E6F0; font-size:11px; color:var(--grey);">U of T EMHI &nbsp;&middot;&nbsp; 2026 &nbsp;&middot;&nbsp; K. Brianna Wilson </p>
   </div>
 </div>
 
