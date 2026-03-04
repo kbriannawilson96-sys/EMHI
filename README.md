@@ -347,7 +347,7 @@
 </div>
 <div class="interop-def">
   <p spellcheck="true"><em>“The ability of different information systems, devices and applications to access, exchange, integrate and cooperatively use data in a coordinated manner to optimize the health of individuals and populations.”</em></p>
-  <p class="cite" spellcheck="true">— CPSA, Interoperability Saves Lives (2023) &nbsp;·&nbsp; Canada Health Act.</p>
+  <p class="cite" spellcheck="true">— CPSA, Interoperability Saves Lives (2023) &nbsp;·&nbsp; </p>
 </div>
 <div class="flashcard-grid">
 
@@ -436,7 +436,9 @@
   <div class="section-num">04</div>
   <div class="section-title" spellcheck="true">Human Factor Interoperability: The Prerequisite</div>
 </div>
-<p style="font-size:13px;color:var(--grey);margin-bottom:14px;font-style:italic;padding-left:4px;">You cannot achieve data interoperability without human interoperability first. Policy, governance, and culture must align before technology can connect.</p>
+<p style="font-size:13px;color:var(--grey);margin-bottom:14px;font-style:italic;padding-left:4px;">"We must take the
+disparate responsibilities for health data stewardship and orient themin a way that moves us toward a more
+collaborative and person-centred system" - Dr. Vivek Goel </p>
 <!-- HFI top row: 4 cards -->
 <div class="hfi-grid-top">
 
