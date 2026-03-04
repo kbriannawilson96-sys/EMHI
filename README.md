@@ -231,7 +231,7 @@
 
 <!-- HEADER -->
 <div class="header">
-  <div class="header-tag">U of T EMHI • 2026</div>
+  <div class="header-tag">University of Toronto Executive Master's of Health Informatics • 2026 • K. Brianna Wilson </div>
   <h1 spellcheck="true">Bridging <span>the Gap</span></h1>
   <p class="header-sub" spellcheck="true">Paramedics, Health Informatics &amp; the Imperative for Continuity of Care — a bidirectional, patient-following data framework</p>
   <div class="header-pills">
