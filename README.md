@@ -988,20 +988,6 @@
 
 </div>
 
-<!-- BOTTOM CALLOUT -->
-<div class="callout">
-  <div class="callout-text">
-    <div class="callout-label">The Core Principle</div>
-    <div class="callout-quote">Technology is the <span>easiest</span> part of this list.<br>Policy, people, and governance are where projects live — or die.</div>
-  </div>
-  <div class="seq-pills">
-    <div class="seq-pill"><span class="seq-pill-num">01</span><span class="seq-pill-name">Policy &amp; Legal</span></div>
-    <div class="seq-pill"><span class="seq-pill-num">02</span><span class="seq-pill-name">People &amp; Process</span></div>
-    <div class="seq-pill"><span class="seq-pill-num">03</span><span class="seq-pill-name">Technology</span></div>
-    <div class="seq-pill"><span class="seq-pill-num">04</span><span class="seq-pill-name">Organizational</span></div>
-  </div>
-</div>
-
 <!-- FOOTER -->
 <div class="footer">
   U of T EMHI &nbsp;&middot;&nbsp; 2026 &nbsp;&middot;&nbsp; Bridging the Gap: Paramedics, Health Informatics &amp; the Imperative for Continuity of Care
