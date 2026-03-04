@@ -787,12 +787,7 @@
 <div class="header">
   <div class="header-tag">U of T EMHI &bull; 2026</div>
   <h1>Infrastructure for <span>System Change</span></h1>
-  <p class="header-sub">Four categories of infrastructure — ordered deliberately, because sequence determines whether the project succeeds or fails.</p>
-</div>
-
-<!-- SEQUENCE NOTE -->
-<div class="seq-banner">
-  <strong>Sequence matters.</strong> Technology is listed third — not because it is unimportant, but because deploying it without the first two layers produces expensive, fragmented systems. Every failed health IT implementation followed the wrong order.
+  <p class="header-sub">Four categories of infrastructure</p>
 </div>
 
 <!-- FOUR QUADRANTS -->
