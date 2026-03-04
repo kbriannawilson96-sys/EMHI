@@ -579,7 +579,7 @@ collaborative and person-centred system." - Dr. Vivek Goel </p>
   <div class="closing-quotes">
     <div class="closing-q"><div class="closing-bar"></div><p spellcheck="true">Paramedics are the first clinical touch in a patient’s care journey — yet the last to have access to their information.</p></div>
     <div class="closing-q"><div class="closing-bar"></div><p spellcheck="true">A healthcare system that withholds data from its frontline providers is a system that accepts preventable harm.</p></div>
-    <div class="closing-q"><div class="closing-bar"></div><p spellcheck="true">As conversations and policies continue to evolve, Paramedics must be involved</p></div>
+    <div class="closing-q"><div class="closing-bar"></div><p spellcheck="true">The system is changing. Paramedics must not be consulted at the end; they must be at the table from the beginning."</p></div>
   </div>
   <div class="closing-cta" spellcheck="true">A robust Canadian health data ecosystem includes Paramedics.</div>
 </div>
