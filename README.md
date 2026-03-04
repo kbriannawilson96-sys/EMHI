@@ -600,6 +600,8 @@
       <li>Pan-Canadian Health Data Charter. October 12, 2023. Accessed March 1, 2026. <a href="https://www.canada.ca/en/health-canada/corporate/transparency/health-agreements/shared-health-priorities/working-together-bilateral-agreements/pan-canadian-data-charter.html" style="color:var(--teal);">canada.ca</a></li>
       <li>Allana A, Pinto AD. Paramedics Have Untapped Potential to Address Social Determinants of Health in Canada. <em>Healthc Policy.</em> 2021;16(3):67-75. doi:10.12927/hcpol.2021.26432</li>
       <li>Booker MJ, Simmonds RL, Purdy S. Patients who call emergency ambulances for primary care problems: a qualitative study of the decision-making process. <em>Emerg Med J.</em> 2014;31(6):448-452. doi:10.1136/emermed-2012-202124</li>
+      <li>Lau F, Partridge C, Hauser M. A pan-Canadian health informatics education strategy. AMIA Annu Symp Proc. 2003;2003:386-390. https://pmc.ncbi.nlm.nih.gov/articles/PMC1480046/</li>
+<li>Rees G, Nowell L, Risling T. Shaping the future of digital health education in Canada: prioritizing competencies for health care professionals using the Quintuple Aim. JMIR Med Educ. 2025;11:e75904. doi:10.2196/75904</li>
       <li>Benny G. Provider-centric models of care in which most consumers of healthcare are passive. <em>Internal Medicine Journal.</em> 2015;45(8):795-797. doi:10.1111/imj.12828</li>
       <li>Wealth of Information: Health Data Economics | CIHI. Accessed March 1, 2026. <a href="https://www.cihi.ca/en/wealth-of-information-health-data-economics" style="color:var(--teal);">cihi.ca</a></li>
     </ol>
