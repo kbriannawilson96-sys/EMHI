@@ -233,7 +233,7 @@
 <div class="header">
   <div class="header-tag">Executive Master of Health Informatics • 2026 • K. Brianna Wilson </div>
   <h1 spellcheck="true">Bridging <span>the Gap</span></h1>
-  <p class="header-sub" spellcheck="true">Paramedics, Health Informatics &amp; the Imperative for Continuity of Care — a bidirectional, patient-following data framework</p>
+  <p class="header-sub" spellcheck="true">Paramedics, Health Informatics &amp; the Imperative for Continuity of Care: A bidirectional, patient-following data framework</p>
   <div class="header-pills">
     <span class="pill">Prehospital Care</span>
     <span class="pill">Health Data Interoperability</span>
