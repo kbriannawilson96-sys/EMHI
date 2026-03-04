@@ -592,7 +592,6 @@ collaborative and person-centred system." - Dr. Vivek Goel </p>
     <ol style="font-size:11px; color:var(--grey); line-height:1.9; padding-left:18px;">
       <li>1 in 7 visits to the emergency department are for conditions that could potentially have been managed in primary care | CIHI. Accessed March 2, 2026. <a href="https://www.cihi.ca/en/news/1-in-7-visits-to-the-emergency-department-are-for-conditions-that-could-potentially-have-been" style="color:var(--teal);">cihi.ca</a></li>
       <li>Kuo MH, Kushniruk A, Borycki E. A Comparison of National Health Data Interoperability Approaches in Taiwan, Denmark and Canada.</li>
-      <li>Advanced ePCR Solutions for Paramedics and EMS | Prehos Solutions. Accessed March 2, 2026. <a href="https://www.prehos.com/our-solutions/electronic-patient-care-record-epcr/" style="color:var(--teal);">prehos.com</a></li>
       <li>Brend Y. Canada's health-care system has a data problem, experts say. And it puts patients at risk. <em>CBC News.</em> November 17, 2022. Accessed March 2, 2026. <a href="https://www.cbc.ca/news/canada/health-data-canada-sharing-information-1.6652770" style="color:var(--teal);">cbc.ca</a></li>
       <li>Continuity of Patient Care. Health Quality Alberta. Accessed March 2, 2026. <a href="https://hqa.ca/reports/continuity-of-patient-care-2/" style="color:var(--teal);">hqa.ca</a></li>
       <li>Digital Health Information Exchange | Ontario Health. Accessed March 2, 2026. <a href="https://www.ontariohealth.ca/digital/standards/info-exchange" style="color:var(--teal);">ontariohealth.ca</a></li>
