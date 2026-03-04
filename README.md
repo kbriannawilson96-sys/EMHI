@@ -280,8 +280,6 @@
     <h3 spellcheck="true">Harm #2 — Withhold</h3>
     <p spellcheck="true">Withholding patient data forces providers to make decisions without the information they need</p>
   </div>
-  <p class="dual-harm-label" spellcheck="true">Both are serious. The system concentrates on the first while largely tolerating the second. — CPSA, Interoperability Saves Lives (2023)</p>
-</div>
 
 <!-- EXPANSION PANEL -->
 <div class="expansion" id="data-expansion">
