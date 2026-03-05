@@ -894,7 +894,7 @@
         <div class="quad-dot"></div>
         <div class="quad-item-content">
           <div class="quad-item-label">Joint QI Committee</div>
-          <div class="quad-item-desc">EMS and hospital representation — meets regularly to identify and solve problems early</div>
+          <div class="quad-item-desc">Paramedic and hospital representation — meets regularly to identify and solve problems early</div>
         </div>
       </div>
     </div>
@@ -916,28 +916,28 @@
         <div class="quad-dot"></div>
         <div class="quad-item-content">
           <div class="quad-item-label">HL7 FHIR-Compliant ePCR Platform</div>
-          <div class="quad-item-desc">Several exist in the Canadian market — selected for FHIR compliance and usability in a moving ambulance</div>
+          <div class="quad-item-desc">Several exist in the Canadian market — selected for FHIR compliance </div>
         </div>
       </div>
       <div class="quad-item">
         <div class="quad-dot"></div>
         <div class="quad-item-content">
           <div class="quad-item-label">API Connection to Provincial EHR / Hospital EMR</div>
-          <div class="quad-item-desc">Built on FHIR R4 — technically straightforward when both systems speak the same standard</div>
+          <div class="quad-item-desc">Built on FHIR R4 — technically straightforward </div>
         </div>
       </div>
       <div class="quad-item">
         <div class="quad-dot"></div>
         <div class="quad-item-content">
           <div class="quad-item-label">Medical Device Integration</div>
-          <div class="quad-item-desc">Vital signs and ECG data captured automatically — no manual re-entry from the ambulance</div>
+          <div class="quad-item-desc">Vital signs and ECG data captured automatically </div>
         </div>
       </div>
       <div class="quad-item">
         <div class="quad-dot"></div>
         <div class="quad-item-content">
           <div class="quad-item-label">Role-Based Access Control</div>
-          <div class="quad-item-desc">Paramedics see what they need, access is logged, audit trail satisfies provincial privacy requirements</div>
+          <div class="quad-item-desc">Paramedics see what they need, access is logged, audit trail satisfies privacy requirements</div>
         </div>
       </div>
     </div>
@@ -959,28 +959,28 @@
         <div class="quad-dot"></div>
         <div class="quad-item-content">
           <div class="quad-item-label">Joint Governance Committee</div>
-          <div class="quad-item-desc">EMS, hospital, and health authority representation — decision-making authority, not advisory</div>
+          <div class="quad-item-desc">Paramedic, hospital, and health authority decision-making authority</div>
         </div>
       </div>
       <div class="quad-item">
         <div class="quad-dot"></div>
         <div class="quad-item-content">
           <div class="quad-item-label">Executive Sponsorship (Both Sides)</div>
-          <div class="quad-item-desc">A champion in EMS and a champion in hospital leadership — willing to remove barriers</div>
+          <div class="quad-item-desc">Paramedic and hospital leadership — willing to remove barriers</div>
         </div>
       </div>
       <div class="quad-item">
         <div class="quad-dot"></div>
         <div class="quad-item-content">
           <div class="quad-item-label">Escalation Path for Data Disputes</div>
-          <div class="quad-item-desc">A defined process when a privacy officer says no — resolved without stalling the project</div>
+          <div class="quad-item-desc">A defined process when a privacy officer says no </div>
         </div>
       </div>
       <div class="quad-item">
         <div class="quad-dot"></div>
         <div class="quad-item-content">
           <div class="quad-item-label">Sustainability Plan</div>
-          <div class="quad-item-desc">Pathway to operational funding before the pilot ends — the most common cause of pilot death is running out of money</div>
+          <div class="quad-item-desc">Pathway to operational funding before the pilot ends </div>
         </div>
       </div>
     </div>
