@@ -340,193 +340,85 @@
   </div>
 </div>
 
-<!-- 03 INTEROPERABILITY -->
+<!-- 03 WHAT HAS BEEN TRIED -->
 <div class="section-label">
   <div class="section-num">03</div>
-  <div class="section-title" spellcheck="true">Health Data Interoperability: The Foundation</div>
+  <div class="section-title">What Has Been Tried </div>
 </div>
-<div class="interop-def">
-  <p spellcheck="true"><em>“The ability of different information systems, devices and applications to access, exchange, integrate and cooperatively use data in a coordinated manner to optimize the health of individuals and populations.”</em></p>
-  <p class="cite" spellcheck="true">— CPSA, Interoperability Saves Lives (2023) &nbsp;·&nbsp; </p>
-</div>
-<div class="flashcard-grid">
+<p style="font-size:13px;color:var(--grey);margin-bottom:18px;font-style:italic;padding-left:4px;">This problem has been recognized for decades. What approaches exist? </p>
 
-  <div class="flashcard-wrap" onclick="this.classList.toggle('flipped')">
-    <div class="flashcard-inner">
-      <div class="flashcard-front">
-        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#1A8A9B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
-        <h4 spellcheck="true">Safe</h4>
-        <span class="flashcard-hint">tap to reveal</span>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px;">
+
+  <!-- Canada -->
+  <div style="background:var(--white);border:1px solid #D4E6F0;border-radius:10px;overflow:hidden;box-shadow:0 2px 12px rgba(15,34,64,.06);">
+    <div style="background:var(--navy);padding:14px 18px;display:flex;align-items:center;gap:12px;">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6DCFDB" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+      <div>
+        <div style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--teal3);margin-bottom:2px;">Canada</div>
+        <div style="font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:white;">ePCR Systems</div>
       </div>
-      <div class="flashcard-back">
-        <p spellcheck="true">Reduces adverse events caused by missing or inaccurate patient data at point of care</p>
+      <div style="margin-left:auto;background:rgba(232,127,115,.2);border:1px solid rgba(232,127,115,.4);border-radius:20px;padding:3px 10px;font-size:10px;font-weight:700;color:#E87F73;font-family:'DM Mono',monospace;letter-spacing:1px;">PARTIAL</div>
+    </div>
+    <div style="padding:14px 18px;">
+      <p style="font-size:12px;color:#2A3D50;line-height:1.65;margin-bottom:10px;">Canadian paramedic services have adopted ePCR systems that digitize prehospital documentation. The information gets captured but it does not travel with the patient. - Built as <strong>closed, proprietary systems with no interoperability requirements.</strong></p>
+      <div style="background:var(--offwhite);border-left:3px solid var(--teal);border-radius:0 6px 6px 0;padding:10px 13px;">
+        <p style="font-size:11.5px;color:var(--grey);line-height:1.6;font-style:italic;">In Burnaby, the hospital has a connected system that pulls call records by ambulance unit number. Unreliable. The connection exists — it just stops at the jurisdictional boundary.</p>
       </div>
     </div>
   </div>
 
-  <div class="flashcard-wrap" onclick="this.classList.toggle('flipped')">
-    <div class="flashcard-inner">
-      <div class="flashcard-front">
-        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#1A8A9B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
-        <h4 spellcheck="true">Effective</h4>
-        <span class="flashcard-hint">tap to reveal</span>
+  <!-- UK -->
+  <div style="background:var(--white);border:1px solid #D4E6F0;border-radius:10px;overflow:hidden;box-shadow:0 2px 12px rgba(15,34,64,.06);">
+    <div style="background:var(--navy);padding:14px 18px;display:flex;align-items:center;gap:12px;">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#6DCFDB" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+      <div>
+        <div style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:var(--teal3);margin-bottom:2px;">United Kingdom</div>
+        <div style="font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:white;">NHS Summary Care Record</div>
       </div>
-      <div class="flashcard-back">
-        <p spellcheck="true">Enables evidence-based decisions informed by a complete patient medical history</p>
-      </div>
+      <div style="margin-left:auto;background:rgba(232,150,58,.2);border:1px solid rgba(232,150,58,.4);border-radius:20px;padding:3px 10px;font-size:10px;font-weight:700;color:var(--amber);font-family:'DM Mono',monospace;letter-spacing:1px;">CLOSER</div>
+    </div>
+    <div style="padding:14px 18px;">
+      <p style="font-size:12px;color:#2A3D50;line-height:1.65;">NHS paramedics have <strong>read-only access to patient Summary Care Records</strong> </p>
+      <p style="font-size:12px;color:#2A3D50;line-height:1.65;margin-top:8px;">But the model is <strong>unidirectional</strong> — paramedics can read, but cannot contribute back to the record in real time. </p>
     </div>
   </div>
 
-  <div class="flashcard-wrap" onclick="this.classList.toggle('flipped')">
-    <div class="flashcard-inner">
-      <div class="flashcard-front">
-        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#1A8A9B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
-        <h4 spellcheck="true">Efficient</h4>
-        <span class="flashcard-hint">tap to reveal</span>
+  <!-- Singapore -->
+  <div style="background:var(--white);border:1px solid #D4E6F0;border-radius:10px;overflow:hidden;box-shadow:0 2px 12px rgba(15,34,64,.06);grid-column:1/-1;">
+    <div style="background:var(--teal);padding:14px 18px;display:flex;align-items:center;gap:12px;">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+      <div>
+        <div style="font-family:'DM Mono',monospace;font-size:9px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,.7);margin-bottom:2px;">Singapore</div>
+        <div style="font-family:'Playfair Display',serif;font-size:16px;font-weight:700;color:white;">OMNII — The Proof of Concept</div>
       </div>
-      <div class="flashcard-back">
-        <p spellcheck="true">Eliminates redundant testing, documentation, and the repeated retelling of stories</p>
+      <div style="margin-left:auto;background:rgba(255,255,255,.2);border:1px solid rgba(255,255,255,.4);border-radius:20px;padding:3px 10px;font-size:10px;font-weight:700;color:white;font-family:'DM Mono',monospace;letter-spacing:1px;">LIVE</div>
+    </div>
+    <div style="padding:14px 18px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;">
+      <div style="background:var(--offwhite);border-radius:8px;padding:12px 14px;border-top:3px solid var(--teal2);">
+        <div style="font-size:11px;font-weight:700;color:var(--navy2);margin-bottom:5px;">Built With Frontline Clinicians</div>
+        <div style="font-size:11px;color:var(--grey);line-height:1.6;">Developed collaboratively with SCDF paramedics, MOH physicians, and ED nurses — co-designed from the start.</div>
+      </div>
+      <div style="background:var(--offwhite);border-radius:8px;padding:12px 14px;border-top:3px solid var(--teal2);">
+        <div style="font-size:11px;font-weight:700;color:var(--navy2);margin-bottom:5px;">Real-Time Patient Record Access</div>
+        <div style="font-size:11px;color:var(--grey);line-height:1.6;">Paramedics retrieve full patient health records en route to the hospital — before they arrive on scene.</div>
+      </div>
+      <div style="background:var(--offwhite);border-radius:8px;padding:12px 14px;border-top:3px solid var(--teal2);">
+        <div style="font-size:11px;font-weight:700;color:var(--navy2);margin-bottom:5px;">Live Vitals Streamed to ED</div>
+        <div style="font-size:11px;color:var(--grey);line-height:1.6;">Vital signs transmit directly to the receiving emergency department before the patient arrives.</div>
       </div>
     </div>
-  </div>
-
-  <div class="flashcard-wrap" onclick="this.classList.toggle('flipped')">
-    <div class="flashcard-inner">
-      <div class="flashcard-front">
-        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#1A8A9B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
-        <h4 spellcheck="true">Equitable</h4>
-        <span class="flashcard-hint">tap to reveal</span>
-      </div>
-      <div class="flashcard-back">
-        <p spellcheck="true">Ensures equal information access for all providers — including prehospital teams</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="flashcard-wrap" onclick="this.classList.toggle('flipped')">
-    <div class="flashcard-inner">
-      <div class="flashcard-front">
-        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#1A8A9B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-        <h4 spellcheck="true">Timely</h4>
-        <span class="flashcard-hint">tap to reveal</span>
-      </div>
-      <div class="flashcard-back">
-        <p spellcheck="true">Faster interventions, smarter triage routing, and direct-to-unit transport decisions</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="flashcard-wrap" onclick="this.classList.toggle('flipped')">
-    <div class="flashcard-inner">
-      <div class="flashcard-front">
-        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#1A8A9B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-        <h4 spellcheck="true">Person-Centred</h4>
-        <span class="flashcard-hint">tap to reveal</span>
-      </div>
-      <div class="flashcard-back">
-        <p spellcheck="true">Data follows the patient — not the institution, not the custodian</p>
+    <div style="padding:0 18px 14px;">
+      <div style="background:var(--navy);border-radius:8px;padding:12px 16px;">
+        <p style="font-size:12px;color:rgba(255,255,255,.8);line-height:1.65;font-style:italic;">Canada is not waiting on technology. OMNII proves the vision is operational. What is missing is the governance decision to build it here.</p>
       </div>
     </div>
   </div>
 
 </div>
 
-<!-- 04 HUMAN FACTOR -->
+<!-- 04 SOLUTION -->
 <div class="section-label">
   <div class="section-num">04</div>
-  <div class="section-title" spellcheck="true">Human Factor Interoperability: The Prerequisite</div>
-</div>
-<p style="font-size:13px;color:var(--grey);margin-bottom:14px;font-style:italic;padding-left:4px;">"We recognize that the fundamental challenge we face is not one of technology, rather it is one of culture." - Dr. Vivek Goel </p>
-<!-- HFI top row: 4 cards -->
-<div class="hfi-grid-top">
-
-  <div class="hfi-card-wrap" onclick="this.classList.toggle('flipped')">
-    <div class="hfi-card-inner">
-      <div class="hfi-card-front">
-        <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="#6DCFDB" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
-        <h4 spellcheck="true">Governance</h4>
-        <span class="hfi-card-hint">tap to reveal</span>
-      </div>
-      <div class="hfi-card-back"><p spellcheck="true">Is anyone accountable for connecting the system?</p></div>
-    </div>
-  </div>
-
-  <div class="hfi-card-wrap" onclick="this.classList.toggle('flipped')">
-    <div class="hfi-card-inner">
-      <div class="hfi-card-front">
-        <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="#6DCFDB" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
-        <h4 spellcheck="true">Legislation</h4>
-        <span class="hfi-card-hint">tap to reveal</span>
-      </div>
-      <div class="hfi-card-back"><p spellcheck="true">Does the law allow paramedics to access patient data?</p></div>
-    </div>
-  </div>
-
-  <div class="hfi-card-wrap" onclick="this.classList.toggle('flipped')">
-    <div class="hfi-card-inner">
-      <div class="hfi-card-front">
-        <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="#6DCFDB" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14"></path></svg>
-        <h4 spellcheck="true">Regulation</h4>
-        <span class="hfi-card-hint">tap to reveal</span>
-      </div>
-      <div class="hfi-card-back"><p spellcheck="true">Are health IT vendors required to build for interoperability?</p></div>
-    </div>
-  </div>
-
-  <div class="hfi-card-wrap" onclick="this.classList.toggle('flipped')">
-    <div class="hfi-card-inner">
-      <div class="hfi-card-front">
-        <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="#6DCFDB" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
-        <h4 spellcheck="true">Policy</h4>
-        <span class="hfi-card-hint">tap to reveal</span>
-      </div>
-      <div class="hfi-card-back"><p spellcheck="true">Have organizations committed to sharing data across boundaries?</p></div>
-    </div>
-  </div>
-
-</div>
-
-<!-- HFI bottom row: 3 cards -->
-<div class="hfi-grid-bottom">
-
-  <div class="hfi-card-wrap" onclick="this.classList.toggle('flipped')">
-    <div class="hfi-card-inner">
-      <div class="hfi-card-front">
-        <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="#6DCFDB" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
-        <h4 spellcheck="true">Literacy</h4>
-        <span class="hfi-card-hint">tap to reveal</span>
-      </div>
-      <div class="hfi-card-back"><p spellcheck="true">Does the workforce understand why this matters?</p></div>
-    </div>
-  </div>
-
-  <div class="hfi-card-wrap" onclick="this.classList.toggle('flipped')">
-    <div class="hfi-card-inner">
-      <div class="hfi-card-front">
-        <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="#6DCFDB" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.34 2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.85a16 16 0 0 0 6.29 6.29l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7a2 2 0 0 1 1.73 2.03z"></path></svg>
-        <h4 spellcheck="true">Communication</h4>
-        <span class="hfi-card-hint">tap to reveal</span>
-      </div>
-      <div class="hfi-card-back"><p spellcheck="true">Are stakeholders talking openly about who is responsible?</p></div>
-    </div>
-  </div>
-
-  <div class="hfi-card-wrap" onclick="this.classList.toggle('flipped')">
-    <div class="hfi-card-inner">
-      <div class="hfi-card-front">
-        <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="#6DCFDB" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
-        <h4 spellcheck="true">Culture</h4>
-        <span class="hfi-card-hint">tap to reveal</span>
-      </div>
-      <div class="hfi-card-back"><p spellcheck="true">Does the system put patients ahead of organizational territory?</p></div>
-    </div>
-  </div>
-
-</div>
-
-<!-- 05 SOLUTION -->
-<div class="section-label">
-  <div class="section-num">05</div>
   <div class="section-title" spellcheck="true">Proposed Solution: A Bidirectional, Patient-Following Data Framework</div>
 </div>
 <p style="font-size:13px;color:var(--grey);margin-bottom:22px;font-style:italic;padding-left:4px;">Data must flow with the patient from the moment a 911 call is initiated — and feedback must flow back to paramedics after care is complete.</p>
@@ -538,9 +430,9 @@
   <div class="phase"><div class="phase-num">5</div><div class="phase-card"><div class="phase-title" spellcheck="true">Outcome Loop</div><div class="phase-desc" spellcheck="true">Post-discharge summary returned to paramedics. Diagnoses &amp; outcomes close the loop and fuel clinical learning.</div></div></div>
 </div>
 
-<!-- 06 WHY IT WORKS -->
+<!-- 05 WHY IT WORKS -->
 <div class="section-label">
-  <div class="section-num">06</div>
+  <div class="section-num">05</div>
   <div class="section-title" spellcheck="true">Why It Will Work</div>
 </div>
 <div class="why-grid">
@@ -987,6 +879,191 @@
   </div>
 
 </div>
+
+<!-- 06 INTEROPERABILITY -->
+<div class="section-label">
+  <div class="section-num">06</div>
+  <div class="section-title" spellcheck="true">Health Data Interoperability: The Foundation</div>
+</div>
+<div class="interop-def">
+  <p spellcheck="true"><em>“The ability of different information systems, devices and applications to access, exchange, integrate and cooperatively use data in a coordinated manner to optimize the health of individuals and populations.”</em></p>
+  <p class="cite" spellcheck="true">— CPSA, Interoperability Saves Lives (2023) &nbsp;·&nbsp; </p>
+</div>
+<div class="flashcard-grid">
+
+  <div class="flashcard-wrap" onclick="this.classList.toggle('flipped')">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#1A8A9B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+        <h4 spellcheck="true">Safe</h4>
+        <span class="flashcard-hint">tap to reveal</span>
+      </div>
+      <div class="flashcard-back">
+        <p spellcheck="true">Reduces adverse events caused by missing or inaccurate patient data at point of care</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard-wrap" onclick="this.classList.toggle('flipped')">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#1A8A9B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+        <h4 spellcheck="true">Effective</h4>
+        <span class="flashcard-hint">tap to reveal</span>
+      </div>
+      <div class="flashcard-back">
+        <p spellcheck="true">Enables evidence-based decisions informed by a complete patient medical history</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard-wrap" onclick="this.classList.toggle('flipped')">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#1A8A9B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+        <h4 spellcheck="true">Efficient</h4>
+        <span class="flashcard-hint">tap to reveal</span>
+      </div>
+      <div class="flashcard-back">
+        <p spellcheck="true">Eliminates redundant testing, documentation, and the repeated retelling of stories</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard-wrap" onclick="this.classList.toggle('flipped')">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#1A8A9B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+        <h4 spellcheck="true">Equitable</h4>
+        <span class="flashcard-hint">tap to reveal</span>
+      </div>
+      <div class="flashcard-back">
+        <p spellcheck="true">Ensures equal information access for all providers — including prehospital teams</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard-wrap" onclick="this.classList.toggle('flipped')">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#1A8A9B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+        <h4 spellcheck="true">Timely</h4>
+        <span class="flashcard-hint">tap to reveal</span>
+      </div>
+      <div class="flashcard-back">
+        <p spellcheck="true">Faster interventions, smarter triage routing, and direct-to-unit transport decisions</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="flashcard-wrap" onclick="this.classList.toggle('flipped')">
+    <div class="flashcard-inner">
+      <div class="flashcard-front">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#1A8A9B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+        <h4 spellcheck="true">Person-Centred</h4>
+        <span class="flashcard-hint">tap to reveal</span>
+      </div>
+      <div class="flashcard-back">
+        <p spellcheck="true">Data follows the patient — not the institution, not the custodian</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!--07 HUMAN FACTOR -->
+<div class="section-label">
+  <div class="section-num">07</div>
+  <div class="section-title" spellcheck="true">Human Factor Interoperability: The Prerequisite</div>
+</div>
+<p style="font-size:13px;color:var(--grey);margin-bottom:14px;font-style:italic;padding-left:4px;">"We recognize that the fundamental challenge we face is not one of technology, rather it is one of culture." - Dr. Vivek Goel </p>
+<!-- HFI top row: 4 cards -->
+<div class="hfi-grid-top">
+
+  <div class="hfi-card-wrap" onclick="this.classList.toggle('flipped')">
+    <div class="hfi-card-inner">
+      <div class="hfi-card-front">
+        <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="#6DCFDB" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+        <h4 spellcheck="true">Governance</h4>
+        <span class="hfi-card-hint">tap to reveal</span>
+      </div>
+      <div class="hfi-card-back"><p spellcheck="true">Is anyone accountable for connecting the system?</p></div>
+    </div>
+  </div>
+
+  <div class="hfi-card-wrap" onclick="this.classList.toggle('flipped')">
+    <div class="hfi-card-inner">
+      <div class="hfi-card-front">
+        <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="#6DCFDB" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+        <h4 spellcheck="true">Legislation</h4>
+        <span class="hfi-card-hint">tap to reveal</span>
+      </div>
+      <div class="hfi-card-back"><p spellcheck="true">Does the law allow paramedics to access patient data?</p></div>
+    </div>
+  </div>
+
+  <div class="hfi-card-wrap" onclick="this.classList.toggle('flipped')">
+    <div class="hfi-card-inner">
+      <div class="hfi-card-front">
+        <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="#6DCFDB" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14"></path></svg>
+        <h4 spellcheck="true">Regulation</h4>
+        <span class="hfi-card-hint">tap to reveal</span>
+      </div>
+      <div class="hfi-card-back"><p spellcheck="true">Are health IT vendors required to build for interoperability?</p></div>
+    </div>
+  </div>
+
+  <div class="hfi-card-wrap" onclick="this.classList.toggle('flipped')">
+    <div class="hfi-card-inner">
+      <div class="hfi-card-front">
+        <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="#6DCFDB" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+        <h4 spellcheck="true">Policy</h4>
+        <span class="hfi-card-hint">tap to reveal</span>
+      </div>
+      <div class="hfi-card-back"><p spellcheck="true">Have organizations committed to sharing data across boundaries?</p></div>
+    </div>
+  </div>
+
+</div>
+
+<!-- HFI bottom row: 3 cards -->
+<div class="hfi-grid-bottom">
+
+  <div class="hfi-card-wrap" onclick="this.classList.toggle('flipped')">
+    <div class="hfi-card-inner">
+      <div class="hfi-card-front">
+        <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="#6DCFDB" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+        <h4 spellcheck="true">Literacy</h4>
+        <span class="hfi-card-hint">tap to reveal</span>
+      </div>
+      <div class="hfi-card-back"><p spellcheck="true">Does the workforce understand why this matters?</p></div>
+    </div>
+  </div>
+
+  <div class="hfi-card-wrap" onclick="this.classList.toggle('flipped')">
+    <div class="hfi-card-inner">
+      <div class="hfi-card-front">
+        <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="#6DCFDB" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.34 2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.85a16 16 0 0 0 6.29 6.29l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7a2 2 0 0 1 1.73 2.03z"></path></svg>
+        <h4 spellcheck="true">Communication</h4>
+        <span class="hfi-card-hint">tap to reveal</span>
+      </div>
+      <div class="hfi-card-back"><p spellcheck="true">Are stakeholders talking openly about who is responsible?</p></div>
+    </div>
+  </div>
+
+  <div class="hfi-card-wrap" onclick="this.classList.toggle('flipped')">
+    <div class="hfi-card-inner">
+      <div class="hfi-card-front">
+        <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="#6DCFDB" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+        <h4 spellcheck="true">Culture</h4>
+        <span class="hfi-card-hint">tap to reveal</span>
+      </div>
+      <div class="hfi-card-back"><p spellcheck="true">Does the system put patients ahead of organizational territory?</p></div>
+    </div>
+  </div>
+
+</div>
+
 
 <!-- FOOTER -->
 <div class="footer">
