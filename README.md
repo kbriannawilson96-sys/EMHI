@@ -541,37 +541,47 @@
 <!-- 06 WHY IT WORKS -->
 <div class="section-label">
   <div class="section-num">06</div>
-  <div class="section-title" spellcheck="true">Why It Will Work</div>
+  <div class="section-title">Why It Will Work</div>
 </div>
-<div class="why-grid">
-  <div class="why-card">
-    <div class="why-icon-wrap"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1A8A9B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1"></rect><line x1="9" y1="12" x2="15" y2="12"></line><line x1="9" y1="16" x2="13" y2="16"></line></svg></div>
-    <div><h4 spellcheck="true">Evidence Base</h4><p spellcheck="true">Community paramedicine with integrated data access shows improved outcomes, reduced ED use, and higher patient satisfaction (Bigham et al., 2013; Dainty et al., 2018).</p></div>
+<div class="expansion" id="why-expansion">
+  <div class="expansion-trigger" onclick="this.parentElement.classList.toggle('open')">
+    <div class="expansion-trigger-left">
+      <span class="expansion-tag">Expand</span>
+      <span class="expansion-title-static">Six reasons this framework succeeds where others have failed</span>
+    </div>
+    <span class="expansion-chevron">&#8964;</span>
   </div>
-  <div class="why-card">
-    <div class="why-icon-wrap"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1A8A9B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17.8 19.2L16 11l3.5-3.5C21 6 21 4 19 4c-1 0-2 1-3.5 2.5L9 11 2.8 9.2c-.6-.2-.6-1 0-1.2L21 3l-2 18c-.2.6-1 .6-1.2 0z"></path></svg></div>
-    <div><h4 spellcheck="true">Aviation</h4><p spellcheck="true">Aviation coordinates thousands of aircraft globally via a single interoperable standard, mandated by governance, not technology. Healthcare can do the same.</p></div>
-  </div>
-  <div class="why-card">
-    <div class="why-icon-wrap"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1A8A9B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg></div>
-    <div><h4 spellcheck="true">Banking</h4><p spellcheck="true">Your debit card works at any ATM worldwide through technical standards + regulatory mandates. Patient data can follow patients the same way.</p></div>
-  </div>
-  <div class="why-card">
-    <div class="why-icon-wrap"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1A8A9B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 1 21 5 17 9"></polyline><path d="M3 11V9a4 4 0 0 1 4-4h14"></path><polyline points="7 23 3 19 7 15"></polyline><path d="M21 13v2a4 4 0 0 1-4 4H3"></path></svg></div>
-    <div><h4 spellcheck="true">Bidirectional Learning</h4><p spellcheck="true">When paramedics receive outcome feedback — diagnoses, treatments, discharge — their clinical knowledge grows. Closing the loop elevates the entire profession.</p></div>
-  </div>
-  <div class="why-card">
-    <div class="why-icon-wrap"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1A8A9B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="22" x2="21" y2="22"></line><line x1="6" y1="18" x2="6" y2="11"></line><line x1="10" y1="18" x2="10" y2="11"></line><line x1="14" y1="18" x2="14" y2="11"></line><line x1="18" y1="18" x2="18" y2="11"></line><polygon points="12 2 20 7 4 7"></polygon></svg></div>
-    <div><h4 spellcheck="true">Governance-First Design</h4><p spellcheck="true">Prior efforts failed by deploying technology into fragmented governance. This framework builds policy and legislative alignment before any procurement.</p></div>
-  </div>
-  <div class="why-card">
-    <div class="why-icon-wrap"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1A8A9B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></div>
-    <div><h4 spellcheck="true">The Moral Imperative</h4><p spellcheck="true">Withholding clinical data from frontline providers is an active, preventable harm. As stewards of health data, we are obligated to act.</p></div>
-  </div>
-</div>
-
-<div class="divider"></div>
-
+  <div class="expansion-body">
+    <div class="exp-grid" style="grid-template-columns:repeat(3,1fr);">
+      <div class="exp-card">
+        <div class="exp-card-num">01</div>
+        <h4>Evidence Base</h4>
+        <p>Community paramedicine with integrated data access shows <strong>improved outcomes, reduced ED use, and higher patient satisfaction</strong> (Bigham et al., 2013; Dainty et al., 2018).</p>
+      </div>
+      <div class="exp-card">
+        <div class="exp-card-num">02</div>
+        <h4>Aviation Analogy</h4>
+        <p>Aviation coordinates thousands of aircraft globally via a <strong>single interoperable standard</strong> &mdash; mandated by governance, not technology. Healthcare can do the same.</p>
+      </div>
+      <div class="exp-card">
+        <div class="exp-card-num">03</div>
+        <h4>Banking Analogy</h4>
+        <p>Your debit card works at any ATM worldwide through <strong>technical standards and regulatory mandates</strong>. Patient data can follow patients the same way.</p>
+      </div>
+      <div class="exp-card">
+        <div class="exp-card-num">04</div>
+        <h4>Bidirectional Learning</h4>
+        <p>When paramedics receive outcome feedback &mdash; diagnoses, treatments, discharge &mdash; their clinical knowledge grows. <strong>Closing the loop elevates the entire profession.</strong></p>
+      </div>
+      <div class="exp-card">
+        <div class="exp-card-num">05</div>
+        <h4>Governance-First Design</h4>
+        <p>Prior efforts failed by deploying technology into <strong>fragmented governance</strong>. This framework builds policy and legislative alignment before any procurement.</p>
+      </div>
+      <div class="exp-card">
+        <div class="exp-card-num">06</div>
+        <h4>The Moral Imperative</h4>
+        <p>W
 <!-- CLOSING -->
 <div class="closing">
   <div class="closing-quotes">
